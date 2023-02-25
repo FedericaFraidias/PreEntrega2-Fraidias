@@ -161,8 +161,25 @@ h2 {
     margin-top: 4%;
 }
 
+/* PRODUCTOS  */
+.col.d-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 5% 0 5% 0;
+}
+
+.card-img-overlay {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFDFD;
 
 
+}
 /* media queries para celular */
 @media screen and (max-width: 576px) {
 
@@ -255,11 +272,91 @@ h2 {
 }
 
 /* media queries para tablet */
-@media screen and (min-width: 766px){
+@media screen and (min-width: 766px) and (max-width: 1020px) {
     body {
         background-color: blue;
     }
+    
+    /* INDEX */
+    .titulo {
+        font-size: 2.5rem;
+        margin-top: 8%;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: 8%;
+        letter-spacing: 0.05rem;
+    }
+    
+    .header #banner {
+        max-height: 180px;
+    }
 
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    
+
+    #aboutus {
+        width: 200%;
+        font-size: 0.7rem;
+        line-height: 180%;
+    }
+
+    #event {
+        line-height: 180%;
+        font-size: 0.7rem;
+    }
+    
+    .carousel-img {
+        width: 30%;
+        display: inline-block;
+        margin: 3% 1% 5% 1%;
+    }
+
+    #footer-top {
+        height: 50%;
+        margin: 0%;
+    }
+
+    .footer {
+        font-size: 0.35rem;
+        margin: 0.8%;
+    }
+
+    .nav-item-footer {
+        padding: 0;
+        margin-right: 1%;
+    }
+
+    .nav-link.active {
+        padding: 0%;     
+    }
+
+   /* DISEÑOS */
+   .titulos-sec {
+    font-size: 1.25rem;
+    margin-top: 5%;
+   }
+
+   .back {
+    font-size: 0.75rem;
+    
+   }
+
+   #galeria {
+    margin: 0;
+   }
+
+   .col-3.galeria {
+    width: 52%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   }
+
+   
 } 
 
 
