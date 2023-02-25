@@ -51,52 +51,66 @@
         </div>
     </nav>
 
-    <!-- Titulo -->
-    <section class="row text-center align-items-center justify-content-between top">
-        <div class="col-6"><h1 id="titulo" class="titulos-sec"><b>Productos.</b></h1></div>
-        <div class="col-4"><a class="back" href="../index.html">Volver al inicio</a></div>
-    </section> 
+    <section class="container productos">
+        <!-- Titulo -->
+        <section class="row text-center align-items-center justify-content-between top">
+            <div class="col-5"><h1 id="titulo" class="titulos-sec"><b>Productos.</b></h1></div>
+            <div class="col-5"><a class="back" href="../index.html">Volver al inicio</a></div>
+        </section> 
 
-    <section id="search">
-        <input type="text" name="search" id="search" value="Gustos, diseños, evento, etc..">
-        <select name="categorias" >
-            <option value="0">-Categorías-</option>
-            <option value="1">Personalizado</option>
-            <option value="2">Tartas</option>
-            <option value="3">Pastelería Clásica</option>
-            <option value="4">Boxes Especiales</option>
-            <option value="5">Otros</option>
-        </select>
-        <button id="button">Buscar</button>
+
+        <!-- SEARCH -->
+        <nav class="navbar-search navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="navbar-collapse" id="navbarSupportedContentSearch">
+                <ul class="navbar-nav-search me-auto mb-2 mb-lg-0">
+                  <li class="nav-item-search dropdown">
+                    <a class="nav-link-search dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorías
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Personalizado</a></li>
+                      <li><a class="dropdown-item" href="#">Tartas</a></li>
+                      <li><a class="dropdown-item" href="#">Clásicas</a></li>
+                      <li><a class="dropdown-item" href="#">Otros</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Busca por gusto, diseño, tipo de evento, etc." aria-label="Search">
+                  <button class="btn btn-search btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+        </nav>
     </section>
 
-    <section class="container productos">
-        <section class="row">
-            <section class="col d-flex">
-                <div class="card" style="width:500px">
-                    <img class="card-img-top" src="../photos/drstrangecuadrado.jpg" alt="Dr. Strange torta alta.">
-                    <div class="card-img-overlay d-flex text-center">
-                      <h4 class="card-title">PERSONALIZADO</h4>
-                    </div>
+    <section class="row">
+        <section class="col d-flex">
+            <div class="card" style="width:500px">
+                <img class="card-img-top" src="../photos/drstrangecuadrado.jpg" alt="Dr. Strange torta alta.">
+                <div class="card-img-overlay d-flex text-center">
+                    <h4 class="card-title">PERSONALIZADO</h4>
                 </div>
-                <div class="card" style="width:500px">
-                    <img class="card-img-top" src="../photos/tartadecoco.jpg" alt="Tarta de coco y dulce de leche.">
-                    <div class="card-img-overlay d-flex text-center">
-                      <h4 class="card-title">TARTAS</h4>
-                    </div>
+            </div>
+            <div class="card" style="width:500px">
+                <img class="card-img-top" src="../photos/tartadecoco.jpg" alt="Tarta de coco y dulce de leche.">
+                <div class="card-img-overlay d-flex text-center">
+                    <h4 class="card-title">TARTAS</h4>
                 </div>
-                <div class="card" style="width:500px">
-                    <img class="card-img-top" src="../photos/tortachocolate.jpg" alt="Torta clásica de chocolate.">
-                    <div class="card-img-overlay d-flex text-center">
-                      <h4 class="card-title">CLÁSICAS</h4>
-                    </div>
+            </div>
+            <div class="card" style="width:500px">
+                <img class="card-img-top" src="../photos/tortachocolate.jpg" alt="Torta clásica de chocolate.">
+                <div class="card-img-overlay d-flex text-center">
+                    <h4 class="card-title">CLÁSICAS</h4>
                 </div>
-                <div class="card" style="width:500px">
-                    <img class="card-img-top" src="../photos/rosas.jpg" alt="Ramo de cupcakes de rosas.">
-                    <div class="card-img-overlay d-flex text-center">
-                      <h4 class="card-title">BOXES ESPECIALES</h4>
-                    </div>
+            </div>
+            <div class="card" style="width:500px">
+                <img class="card-img-top" src="../photos/rosas.jpg" alt="Ramo de cupcakes de rosas.">
+                <div class="card-img-overlay d-flex text-center">
+                    <h4 class="card-title">BOXES ESPECIALES</h4>
                 </div>
+            </div>
             </section>
         </section>
     </section>

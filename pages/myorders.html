@@ -51,110 +51,117 @@
         </div>
     </nav>
 
-    <!-- Titulo -->
-    <div class="container">
-        <div class="row">
-            <h1 id="titulo" class="titulos-sec">Mis Pedidos.</h1>
-        </div> 
-    </div>
 
-    <section id="order">
+    <div class="container pedidos">
+        <!-- Titulo -->
+        <section class="row text-center align-items-center justify-content-between top">
+            <div class="col-5"><h1 id="titulo" class="titulos-sec"><b>Mi Pedido.</b></h1></div>
+            <div class="col-5"><a class="back" href="../index.html">Volver al inicio</a></div>
+        </section>
+
+        <section class="row">
+            <section class="col" id="order">
+                <p>Elige el gusto:</p>
+                <form id="gustos">
+                    <input type="radio" id="vainilla" name="gusto" value="vainilla">
+                    <label for="vainilla">Vainilla</label><br>
             
-        <p>Elige el gusto:</p>
-        <form id="gustos">
-            <input type="radio" id="vainilla" name="gusto" value="vainilla">
-            <label for="vainilla">Vainilla</label><br>
+                    <input type="radio" id="chocolate" name="gusto" value="chocolate">
+                    <label for="chocolate">Chocolate</label><br>
+            
+                    <input type="radio" id="limon" name="gusto" value="limon">
+                    <label for="limon">Limón</label><br>
+            
+                    <input type="radio" id="velvet" name="gusto" value="velvet">
+                    <label for="velvet">Red Velvet</label><br>
+                </form>
+                <p>Elige el relleno:</p>
+                <form id="rellenos">
+                    <input type="radio" id="ddl" name="relleno" value="ddl">
+                    <label for="ddl">Dulce de Leche</label><br>
+            
+                    <input type="radio" id="chocolate" name="relleno" value="chocolate">
+                    <label for="chocolate">Chocolate</label><br>
+            
+                    <input type="radio" id="kinder" name="relleno" value="kinder">
+                    <label for="kinder">Chocolate Kinder</label><br>
+            
+                    <input type="radio" id="queso" name="relleno" value="queso">
+                    <label for="queso">Cream Cheese</label><br>
+            
+                    <input type="radio" id="crema" name="relleno" value="crema">
+                    <label for="crema">Crema Chantilly</label><br>
+                </form>
+                <p>Elige la cobertura:</p>
+                <form id="cobertura">
+                    <input type="radio" id="ganache" name="cobertura" value="ganache">
+                    <label for="ganache">Ganache</label><br>
+                    <input type="radio" id="chocolate" name="cobertura" value="chocolate">
+                    <label for="chocolate">Chocolate</label><br>
+                    <input type="radio" id="buttercream" name="cobertura" value="buttercream">
+                    <label for="buttercream">Buttercream de vainilla</label><br>
+                </form>
+                <p>Cantidad de invitados:</p>
+                <form>
+                    <input type="number" id="personas" name="personas" value="personas">
+                    <label for="personas"></label><br>
+                </form>
+                <p>Altura:</p>
+                <form id="altura">
+                    <input type="radio" id="alto" name="alto" value="alta">
+                    <label for="alto">Alta</label><br>
+                    <input type="radio" id="alto" name="alto" value="baja">
+                    <label for="alto">Baja</label><br>
+                </form>
+                <form id="fecha">
+                    <p>Ingresa la fecha de entrega de tu pedido:</p>
+                    <input type="date" id="fecha" name="fecha" value="dd/mm/aa" required><br>
+                </form>
+                <p>Elige forma de retiro:</p>
+                <form id="retiro">
+                    <input type="radio" id="local" name="local" value="local">
+                    <label for="local">Local: Rosario, Santa Fe.</label><br>
+                    <input type="radio" id="envio" name="envio" value="envio">
+                    <label for="envio">Envío dentro de Rosario.</label><br>
+                    <p>En caso de seleccionar envío, coloca la dirección en los comentarios adicionales.</p>
+                </form>      
+            </section>         
 
-            <input type="radio" id="chocolate" name="gusto" value="chocolate">
-            <label for="chocolate">Chocolate</label><br>
+            <!-- selecciones -->
+            <section id="resultado">
+                <h3>Tus selecciones:</h3>
+                <p>El precio aproximado de tu producto es $ ______</p>
+                <p>Nuestro equipo administrativo se comunicará contigo para coordinar los últimos detalles y el precio final.</p>
+                <p>Ingrese observaciones o comentarios adicionales:</p>
+                <textarea id="comentario" cols="40" rows="10">Comentario...</textarea>
+            </section>
+        
+            <!-- medios de pago -->
+            <section id="mediosdepago">
+                <h3>Medios de pago:</h3>
+        
+                <div id="pagos">
+                    <input type="radio" id="transferencia" name="pago" value="transferencia">
+                    <label for="transferencia">Transferencia Bancaria</label><br>
+        
+                    <input type="radio" id="efectivo" name="pago" value="efectivo">
+                    <label for="efectivo">Efectivo</label><br>
+        
+                    <input type="radio" id="mercado" name="pago" value="mercado">
+                    <label for="mercado">Mercado Pago</label><br>
+                </div>
+        
+                <p>NOTA:</p>
+                <p>El método de pago deseado, se debe aclarar en los comentarios.</p> 
+                <p>El pedido debe estar pago para realizar la entrega del mismo.</p>
+                <button class="btn btn-pedidos btn-outline-success" type="submit">Solicitar pedido.</button>      
+            </section>                       
+        </section>
+    </div>
+    
 
-            <input type="radio" id="limon" name="gusto" value="limon">
-            <label for="limon">Limón</label><br>
+ 
 
-            <input type="radio" id="velvet" name="gusto" value="velvet">
-            <label for="velvet">Red Velvet</label><br>
-        </form>
-        <p>Elige el relleno:</p>
-        <form id="rellenos">
-            <input type="radio" id="ddl" name="relleno" value="ddl">
-            <label for="ddl">Dulce de Leche</label><br>
-
-            <input type="radio" id="chocolate" name="relleno" value="chocolate">
-            <label for="chocolate">Chocolate</label><br>
-
-            <input type="radio" id="kinder" name="relleno" value="kinder">
-            <label for="kinder">Chocolate Kinder</label><br>
-
-            <input type="radio" id="queso" name="relleno" value="queso">
-            <label for="queso">Cream Cheese</label><br>
-
-            <input type="radio" id="crema" name="relleno" value="crema">
-            <label for="crema">Crema Chantilly</label><br>
-        </form>
-        <p>Elige la cobertura:</p>
-        <form id="cobertura">
-            <input type="radio" id="ganache" name="cobertura" value="ganache">
-            <label for="ganache">Ganache</label><br>
-            <input type="radio" id="chocolate" name="cobertura" value="chocolate">
-            <label for="chocolate">Chocolate</label><br>
-            <input type="radio" id="buttercream" name="cobertura" value="buttercream">
-            <label for="buttercream">Buttercream de vainilla</label><br>
-        </form>
-        <p>Cantidad de invitados:</p>
-        <form>
-            <input type="number" id="personas" name="personas" value="personas">
-            <label for="personas"></label><br>
-        </form>
-        <p>Altura:</p>
-        <form id="altura">
-            <input type="radio" id="alto" name="alto" value="alta">
-            <label for="alto">Alta</label><br>
-            <input type="radio" id="alto" name="alto" value="baja">
-            <label for="alto">Baja</label><br>
-        </form>
-        <form id="fecha">
-            <p>Ingresa la fecha de entrega de tu pedido:</p>
-            <input type="date" id="fecha" name="fecha" value="dd/mm/aa" required><br>
-        </form>
-        <p>Elige forma de retiro:</p>
-        <form id="retiro">
-            <input type="radio" id="local" name="local" value="local">
-            <label for="local">Local: Rosario, Santa Fe.</label><br>
-            <input type="radio" id="envio" name="envio" value="envio">
-            <label for="envio">Envío dentro de Rosario.</label><br>
-            <p>En caso de seleccionar envío, coloca la dirección en los comentarios adicionales.</p>
-        </form>
-
-    </section>
-
-    <section id="resultado">
-        <h3>Tus selecciones:</h3>
-        <p>El precio aproximado de tu producto es $ ______</p>
-        <p>Nuestro equipo administrativo se comunicará contigo para coordinar los últimos detalles y el precio final.</p>
-        <p>Ingrese observaciones o comentarios adicionales:</p>
-        <textarea id="comentario" cols="40" rows="10">Comentario...</textarea>
-    </section>
-
-    <section id="mediosdepago">
-        <h3>Medios de pago:</h3>
-
-        <div id="pagos">
-            <input type="radio" id="transferencia" name="pago" value="transferencia">
-            <label for="transferencia">Transferencia Bancaria</label><br>
-
-            <input type="radio" id="efectivo" name="pago" value="efectivo">
-            <label for="efectivo">Efectivo</label><br>
-
-            <input type="radio" id="mercado" name="pago" value="mercado">
-            <label for="mercado">Mercado Pago</label><br>
-        </div>
-
-        <p>NOTA:</p>
-        <p>El método de pago deseado, se debe aclarar en los comentarios.</p> 
-        <p>El pedido debe estar pago para realizar la entrega del mismo.</p>
-        <button>Enviar pedido.</button>
-
-    </section>
 
     <!-- Footer -->
     <div class="container-fluid">
