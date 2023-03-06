@@ -1,0 +1,11 @@
+{
+  "name": "borntobake",
+  "version": "1.0.0",
+  "description": "SASS en borntobake",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Federica Fraidias",
+  "license": "ISC"
+}

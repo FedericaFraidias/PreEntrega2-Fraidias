@@ -1,30 +1,44 @@
+// colores 
+$rosa_pastel: #FFE0DE;
+$rosa_fuerte: #D96A7E;
+$rosa_oscuro: #BF5E70;
+$celeste_pastel: #DEE6FF;
+$celeste_btb: #95BFB0;
+$verde: #557365;
+$negro: #0D0D0D;
+$blanco: #FFFDFD;
+$crema: #E6E3B8;
+
+
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFFDFD;
+    background-color: $blanco;
 }
 
-.header{
-    background-color: #FFE0DE;
+.header {
+    background-color: $rosa_pastel;
     width: 100%;
+        #banner {
+            max-height: 15rem;
+            margin-right: auto;
+            margin-left: auto;
+            display:block;
+        }
 }
 
-#banner {
-    max-height: 15rem;
-    margin-right: auto;
-    margin-left: auto;
-    display:block;
-}
+
 
 /* Navegación */
 .navbar-collapse {
     justify-content: center;
-    background-color: #FFE0DE;
+    background-color: $rosa_pastel;
     align-items: center;
     margin-bottom: 0%;
 }
 
 .menu {
-    background-color: #FFE0DE;
+    background-color: $rosa_pastel;
     margin: 0%;
     padding: 0%;
 }
@@ -34,13 +48,13 @@ body {
 } 
 
 .navbar-nav .nav-link.active {
-    color: #D96A7E;
+    color: $rosa_fuerte;
 }
 
 ul li a:hover {
-    color: #BF5E70;
+    color: $rosa_oscuro;
     font-size: 1.15rem;
-    text-shadow: 0 0.2rem 0.8rem #BF5E70; 
+    text-shadow: 0 0.2rem 0.8rem $rosa_oscuro; 
 } 
 
 .nav-item {
@@ -62,14 +76,14 @@ ul li a:hover {
 }
 
 .nav-link{
-    color: #D96A7E;
+    color: $rosa_fuerte;
     font-size: 1.1rem;
 }
 
 .nav-link:hover {
-    color: #BF5E70;
+    color: $rosa_oscuro;
     font-size: 1.15rem;
-    text-shadow: 0 0.2rem 0.8rem #BF5E70;
+    text-shadow: 0 0.2rem 0.8rem $rosa_oscuro;
 }
 
 .footer {
@@ -93,14 +107,23 @@ ul li a:hover {
 }
 
 .container-img {
-    align-items: center;
-    justify-content: center;
-    display: grid;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 486px;
+
 }
+
+.inst {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* H1 titulo*/
 .titulo{
-    color: #D96A7E;
+    color: $rosa_fuerte;
     text-align: center;
     margin-top: 5%;
     margin-bottom: 7%;
@@ -110,7 +133,7 @@ ul li a:hover {
 
 
 h2 {
-    color:#95BFB0;
+    color:$celeste_btb;
     font-size: 1.8rem;
     margin-left: 7.5%;
 }
@@ -135,7 +158,7 @@ h2 {
 /* DISEÑOS */
 
 .titulos-sec {
-    color:#95BFB0;
+    color:$celeste_btb;
     font-size: 1.8rem;
 }
 
@@ -152,7 +175,7 @@ h2 {
 
 .back {
     font-size: 1.1rem;
-    color:#95BFB0;
+    color:$celeste_btb;
     text-decoration: none;
     padding-top: 6%;
     
@@ -177,7 +200,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #FFFDFD;
+    color: $blanco;
 }
 
     /* Sección search */
@@ -197,16 +220,16 @@ h2 {
 }
 
 .btn-search {
- color:#95BFB0;
- border-color: #95BFB0;
+ color:$celeste_btb;
+ border-color: $celeste_btb;
 }
 
 .btn-search:hover {
-    background-color: #95BFB0;
+    background-color: $celeste_btb;
 }
 
 #navbarSupportedContentSearch {
-    background-color: #FFFDFD;
+    background-color: $blanco;
     
 }
 
@@ -216,7 +239,7 @@ h2 {
     margin-top: 2%;
     margin-left: 16%;
     margin-bottom: 2.5%;
-    color:#D96A7E;
+    color: $rosa_fuerte;
 }
 
 #mapa {
@@ -286,14 +309,14 @@ h2 {
 }
 
 .btn-pedidos {
-    color:#95BFB0;
-    border-color: #95BFB0;
+    color:$celeste_btb;
+    border-color: $celeste_btb;
     margin-left: 32%;
 }
 
 .btn-pedidos:hover {
-    background-color: #95BFB0;
-    color: #0D0D0D;
+    background-color: $celeste_btb;
+    color: $negro;
 }
 
 
@@ -326,15 +349,9 @@ h2 {
     .container-p {
         font-size: 0.55rem;
         line-height: 200%;
-        color: #0D0D0D;
+        color: $negro;
     }
 
-    .inst {
-        display: flex;
-        max-width: 150%;
-        max-height: 200px;      
-        font-size: 0.1rem;
-    }
 
     #aboutus {
         width: 200%;
@@ -491,18 +508,6 @@ h2 {
 } 
 
 
-
-
-/*PALETA DE COLORES
-#BF5E70 rosa oscuro
-#D96A7E rosa furte
-#FFE0DE rosa pastel btb
-#557365 verde
-#95BFB0 celeste btb
-#DEE6FF celeste pastel
-#0D0D0D negrgo
-#FFFDFD blanco
-#E6E3B8 crema*/
 
 
 /* 
