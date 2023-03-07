@@ -371,6 +371,36 @@ h2 #h2-2 {
     margin-bottom: 5%;
   }
   /*--------PRODUCTOS-----------*/
+  .navbar-search {
+    display: inline;
+  }
+  .navbar-search #navbarSupportedContentSearch {
+    background-color: #FFFDFD;
+    display: inline;
+  }
+  .navbar-search #navbarSupportedContentSearch .navbar-nav-search {
+    list-style: none;
+    display: inline;
+  }
+  .navbar-search #navbarSupportedContentSearch .navbar-nav-search .nav-item-search .nav-link-search {
+    color: #4e4e4e;
+    text-decoration: none;
+    font-size: 0.5rem;
+  }
+  .navbar-search .btn-search {
+    color: #95BFB0;
+    border-color: #95BFB0;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    font-size: 12.5px;
+    padding-left: 3px;
+    padding-bottom: 22px;
+  }
+  .navbar-search .btn-search .btn-search:hover {
+    background-color: #95BFB0;
+  }
+  /* No logré sacar el espacio superior entre el h2 y el nav search*/
   .col.d-flex .card {
     box-shadow: 0.2rem 0.1rem 0.8em #95BFB0;
     width: 60%;
