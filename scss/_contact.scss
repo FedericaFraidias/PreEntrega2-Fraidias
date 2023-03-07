@@ -1,0 +1,56 @@
+/* ---------CONTACTO-----------*/
+#h3-contact {
+    margin-top: 2%;
+    margin-left: 16%;
+    margin-bottom: 2.5%;
+    color: $rosa_fuerte;
+}
+
+#mapa {
+    width:60%;
+    height: 120%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+#redes {
+    line-height: 3rem;
+}
+
+#contacto p {
+    display: block;
+    height: auto;
+    line-height: 1.5rem;
+    margin-top: 10%;
+}
+
+/*Contact Form*/
+#contact_form {
+    width: 70%;
+    height: auto;
+    margin-left: 17%;
+    margin-bottom: 8%;
+    margin-top: 10%;
+}
+
+#contact_form label {
+    display:block;
+    margin-top: 3%;
+}
+#contact_form input{
+    margin-top: 1%;
+    font-family: 'Montserrat', sans-serif;
+    width: 35%;
+    color: rgb(80, 80, 80);
+}
+#contact_form textarea {
+    margin-top: 1%;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    color: rgb(80, 80, 80);
+}
+#contact_form button {
+    display: block;
+    margin-left: 54%;
+    margin-top: 1%;
+}

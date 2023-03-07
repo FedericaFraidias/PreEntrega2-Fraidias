@@ -1,0 +1,40 @@
+/* ----------PRODUCTOS----------*/
+
+.col.d-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card {
+        margin: 5% 0 5% 0;
+            .card-img-overlay {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $blanco;
+            }
+    }
+}
+
+    /* Sección search */
+.navbar-search {
+    width: 80%;
+    margin-left: 9%;
+        #navbarSupportedContentSearch {
+            background-color: $blanco;
+                .navbar-nav-search {
+                    list-style: none;
+                        .nav-item-search .nav-link-search {
+                            color:#4e4e4e;
+                            text-decoration: none;
+                            font-size: 1.1rem;
+                        }
+                }
+        }
+            .btn-search {
+                color:$celeste_btb;
+                border-color: $celeste_btb;
+                    .btn-search:hover {
+                        background-color: $celeste_btb;
+                    }
+                }
+}    

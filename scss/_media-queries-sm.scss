@@ -1,0 +1,122 @@
+/* media queries para celular */
+@media screen and (max-width: 576px) {
+
+    /* ----------INDEX ----------*/
+
+    .titulo {
+        font-size: 1.3rem;
+        margin-top: 8%;
+
+    }
+    
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 8%;
+        letter-spacing: 0.05rem;
+        margin-bottom: 2%;
+    }
+    
+    .header #banner {
+        max-height: 80px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        .instagram {
+            padding-left: 0;
+            .container-img {
+                position: relative;
+                overflow: hidden;
+                width: 110%;
+                height: 260px;
+                margin-top: 10%;
+                .inst {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    }
+                }
+        }
+        .container-img-hero {
+            width: 130%;
+            height: 250px;
+            padding-right: 15%;
+
+        }
+        .container-p {
+            font-size: 0.85rem;
+            line-height: 180%;
+            color: $negro;
+            letter-spacing: 0.03rem;
+            padding-left: 0;
+                #aboutus {
+                    width: 200%;
+                    font-size: 0.7rem;
+                    line-height: 180%;
+                }
+        }
+
+    }
+    
+    #carousel {
+        padding: 0;
+        margin: 0;
+        margin-top: 5%;
+       .carousel-img {
+            width: 29%;
+            display: inline-block;
+            margin: 0 1.65% 10% 1.75%;
+        }
+    }
+
+    #footer-top {
+        height: 10%;
+        width: 100%;
+
+        .nav-item-footer {
+            padding-left: 5px;
+            padding-right: 5px;
+            .nav-link.active {
+                padding: 0%;  
+                font-size: 0.75rem;   
+            }
+        }
+        .footer {
+            font-size: 0.45rem;
+            margin: 0.8%;
+            line-height: 0.45rem;
+        }
+    }
+
+   /* #event {
+        line-height: 180%;
+        font-size: 0.7rem;
+    }*/
+
+
+   /* ---------DISEÑOS---------*/
+   
+   .titulos-sec {
+    font-size: 1.5rem;
+    margin-top: 5%;
+   }
+
+   .top .back {
+    font-size:1rem;
+   }
+
+   #galeria {
+    margin: 0;
+        .col-3.galeria {
+            width: 52%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+   }
+}

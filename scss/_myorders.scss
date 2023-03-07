@@ -1,0 +1,22 @@
+/* ----------PEDIDOS----------- */
+
+.pedidos {
+    #order  {
+        margin: 3% 0 5% 10%;
+    }
+    #resultado {
+        margin: 0 0 5% 10%;
+    }
+    #mediosdepago {
+        margin: 0 0 10% 10%;
+    }
+    .btn-pedidos {
+        color:$celeste_btb;
+        border-color: $celeste_btb;
+        margin-left: 32%;
+            .btn-pedidos:hover {
+                background-color: $celeste_btb;
+                color: $negro;
+            }
+    }
+}

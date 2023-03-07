@@ -1,0 +1,79 @@
+.header {
+    background-color: $rosa_pastel;
+    width: 100%;
+        #banner {
+            max-height: 15rem;
+            margin-right: auto;
+            margin-left: auto;
+            display:block;
+        }
+}
+
+/* Navegación */
+.navbar {
+    padding: 0%;
+        .menu {
+            background-color: $rosa_pastel;
+            margin: 0%;
+            padding: 0%;
+                .navbar-toggler-icon {
+                    width: 1rem;
+                }
+                .navbar-collapse {
+                    justify-content: center;
+                    background-color: $rosa_pastel;
+                    align-items: center;
+                    margin-bottom: 0%;
+                    .navbar-nav .nav-link.active {
+                        color: $rosa_fuerte;
+                            .nav-item {
+                                margin-left: 7%;
+                                margin-right: 7%;
+                                ul li a:hover {
+                                    color: $rosa_oscuro;
+                                    font-size: 1.15rem;
+                                    text-shadow: 0 0.2rem 0.8rem $rosa_oscuro;
+                                    }
+                                }
+                        }
+                }
+        }
+}
+
+/* Footer */
+.nav-item-footer {
+    margin: 0;
+    flex-wrap: nowrap;
+    padding-left: 2%;
+    padding-right: 2%;
+        .nav-link{
+            color: $rosa_fuerte;
+            font-size: 1.1rem;
+                .nav-link:hover {
+                    color: $rosa_oscuro;
+                    font-size: 1.15rem;
+                    text-shadow: 0 0.2rem 0.8rem $rosa_oscuro;
+                }
+        }
+}
+
+.container-footer {
+    margin-top: 3%;
+        .footer {
+            font-size: 0.7rem;
+            text-align: center;
+            color: black;
+            line-height: 0.45rem;
+        }
+}
+
+/*Back Button*/
+.top {
+    margin-top: 4%;
+        .back {
+            font-size: 1.1rem;
+            color:$celeste_btb;
+            text-decoration: none;
+            padding-top: 6%;
+        }
+}
