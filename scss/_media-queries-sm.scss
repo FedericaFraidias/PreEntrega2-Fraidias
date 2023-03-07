@@ -38,8 +38,10 @@
                 margin-top: 10%;
                 .inst {
                     position: absolute;
-                    width: 100%;
-                    height: 100%;
+                    width: 98%;
+                    height: 98%;
+                    box-shadow: 0.1rem 0.1rem 0.2rem black;
+                    border-radius: 1%;
                     }
                 }
         }
@@ -119,4 +121,59 @@
             margin-bottom: 5%;
         }
    }
+
+
+   /*--------PRODUCTOS-----------*/
+
+   .col.d-flex {
+        .card {
+            box-shadow: 0.2rem 0.1rem 0.8em $celeste_btb;
+            width: 60%;
+        }
+   }
+
+
+   /*.col.d-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .card {
+        box-shadow: 0.2rem 0.1rem 2.5em $celeste_btb;
+        border-radius: 5%;
+        margin: 5% 0 5% 0;
+            .card-img-overlay {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $blanco;
+            }
+    }
+    }*/
+
+    /* Sección search */
+    .navbar-search {
+        width: 80%;
+        margin-left: 9%;
+            #navbarSupportedContentSearch {
+                background-color: $blanco;
+                    .navbar-nav-search {
+                        list-style: none;
+                            .nav-item-search .nav-link-search {
+                                color:#4e4e4e;
+                                text-decoration: none;
+                                font-size: 1.1rem;
+                            }
+                    }
+            }
+                .btn-search {
+                    color:$celeste_btb;
+                    border-color: $celeste_btb;
+                        .btn-search:hover {
+                            background-color: $celeste_btb;
+                        }
+                    }
+}  
+
+
+
 }
