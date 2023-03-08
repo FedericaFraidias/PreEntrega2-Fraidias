@@ -1,10 +1,12 @@
 /* ----------INDEX------------ */
 .hero {
+   
     .container-p {
         line-height: 4rem;
         align-items: center; 
         font-size: 1.2rem;
         padding-left: 15%;
+        
     }
 
     .container-img {
@@ -19,6 +21,10 @@
                 box-shadow: 0.1rem 0.1rem 0.6rem black;
                 border-radius: 1%;
             }
+    }
+    
+    .imagen-hero {
+        padding-left: 9%;
     }
 }
 
@@ -41,16 +47,16 @@
         .instagram {
             padding-left: 0;
             .container-img {
-                width: 110%;
-                height: 260px;
-                margin-top: 10%;
+                width: 120%;
+                height: 450px;
+                margin-top: 1%;
+                margin-bottom: 20%;
             }
         }
         .container-img-hero {
             width: 130%;
-            height: 250px;
-            padding-right: 15%;
-
+            height: 350px;
+            margin-left: -15%;
         }
         .container-p {
             font-size: 0.85rem;
@@ -72,9 +78,9 @@
         margin: 0;
         margin-top: 5%;
        .carousel-img {
-            width: 29%;
-            margin: 0 1.65% 10% 1.75%;
+            width: 32%;
+            margin: 0 0.1% 10% 0.44%;
         }
     }
-
+    // Falta alinear las flechas del carrusel y cambiarles el color para que sean más visibles.
 }

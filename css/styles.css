@@ -129,8 +129,9 @@ h2 {
   font-size: 1.8rem;
   margin-left: 7.5%;
 }
-h2 #h2-2 {
-  padding-top: 8%;
+
+.h2-index {
+  margin-left: 3%;
 }
 
 /* MEDIA QUERIES P/ CELULARES*/
@@ -141,7 +142,10 @@ h2 #h2-2 {
   }
   h2 {
     font-size: 1.2rem;
-    margin-left: 0;
+    margin-left: 6%;
+  }
+  .h2-index {
+    margin-left: -1%;
   }
   .titulos-sec {
     font-size: 1.5rem;
@@ -173,6 +177,9 @@ h2 #h2-2 {
   box-shadow: 0.1rem 0.1rem 0.6rem black;
   border-radius: 1%;
 }
+.hero .imagen-hero {
+  padding-left: 9%;
+}
 
 #carousel {
   padding-top: 6.5%;
@@ -194,14 +201,15 @@ h2 #h2-2 {
     padding-left: 0;
   }
   .hero .instagram .container-img {
-    width: 110%;
-    height: 260px;
-    margin-top: 10%;
+    width: 120%;
+    height: 450px;
+    margin-top: 1%;
+    margin-bottom: 20%;
   }
   .hero .container-img-hero {
     width: 130%;
-    height: 250px;
-    padding-right: 15%;
+    height: 350px;
+    margin-left: -15%;
   }
   .hero .container-p {
     font-size: 0.85rem;
@@ -221,8 +229,8 @@ h2 #h2-2 {
     margin-top: 5%;
   }
   #carousel .carousel-img {
-    width: 29%;
-    margin: 0 1.65% 10% 1.75%;
+    width: 32%;
+    margin: 0 0.1% 10% 0.44%;
   }
 }
 #galeria {
