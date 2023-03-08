@@ -59,59 +59,82 @@
             <div class="col-5"><a class="back" href="../index.html">Volver al inicio</a></div>
         </section>
 
+
+        <!-- ¿está bien poner dos id, dos names? -->
         <section class="row">
             <section class="col" id="order">
                 <p>Elige el gusto:</p>
                 <form id="gustos">
-                    <input type="radio" id="vainilla" name="gusto" value="vainilla">
-                    <label for="vainilla">Vainilla</label><br>
-            
-                    <input type="radio" id="chocolate" name="gusto" value="chocolate">
-                    <label for="chocolate">Chocolate</label><br>
-            
-                    <input type="radio" id="limon" name="gusto" value="limon">
-                    <label for="limon">Limón</label><br>
-            
-                    <input type="radio" id="velvet" name="gusto" value="velvet">
-                    <label for="velvet">Red Velvet</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="vainilla" value="vainilla">
+                        <label class="form-check-label" for="flexRadioDefault1" >Vainilla</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="chocolate" value="chocolate">
+                        <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="limon" value="limon">
+                        <label class="form-check-label" for="flexRadioDefault1">Limón</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="velvet" value="velvet">
+                        <label class="form-check-label" for="flexRadioDefault1">Red Velvet</label>
+                    </div>
                 </form>
                 <p>Elige el relleno:</p>
                 <form id="rellenos">
-                    <input type="radio" id="ddl" name="relleno" value="ddl">
-                    <label for="ddl">Dulce de Leche</label><br>
-            
-                    <input type="radio" id="chocolate" name="relleno" value="chocolate">
-                    <label for="chocolate">Chocolate</label><br>
-            
-                    <input type="radio" id="kinder" name="relleno" value="kinder">
-                    <label for="kinder">Chocolate Kinder</label><br>
-            
-                    <input type="radio" id="queso" name="relleno" value="queso">
-                    <label for="queso">Cream Cheese</label><br>
-            
-                    <input type="radio" id="crema" name="relleno" value="crema">
-                    <label for="crema">Crema Chantilly</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="ddl" value="ddl">
+                        <label class="form-check-label" for="flexRadioDefault1">Dulce de Leche</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="chocolate" value="chocolate">
+                        <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="kinder" value="kinder">
+                        <label class="form-check-label" for="flexRadioDefault1">Chocolate Kinder</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="queso" value="queso">
+                        <label class="form-check-label" for="flexRadioDefault1">Cream Cheese</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="crema" value="crema">
+                        <label class="form-check-label" for="flexRadioDefault1">Crema Chantilly</label>
+                    </div>
                 </form>
                 <p>Elige la cobertura:</p>
                 <form id="cobertura">
-                    <input type="radio" id="ganache" name="cobertura" value="ganache">
-                    <label for="ganache">Ganache</label><br>
-                    <input type="radio" id="chocolate" name="cobertura" value="chocolate">
-                    <label for="chocolate">Chocolate</label><br>
-                    <input type="radio" id="buttercream" name="cobertura" value="buttercream">
-                    <label for="buttercream">Buttercream de vainilla</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="ganache" value="ganache">
+                        <label class="form-check-label" for="flexRadioDefault1">Ganache</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="chocolate" value="chocolate">
+                        <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="buttercream" value="buttercream">
+                        <label class="form-check-label" for="flexRadioDefault1">Buttercream de vainilla</label>
+                    </div>
                 </form>
                 <p>Cantidad de invitados:</p>
                 <form>
                     <input type="number" id="personas" name="personas" value="personas">
-                    <label for="personas"></label><br>
+                    <label for="personas"></label>
                 </form>
                 <p>Altura:</p>
                 <form id="altura">
-                    <input type="radio" id="alto" name="alto" value="alta">
-                    <label for="alto">Alta</label><br>
-                    <input type="radio" id="alto" name="alto" value="baja">
-                    <label for="alto">Baja</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="alto" id="flexRadioDefault1" id="alta" value="alta">
+                        <label class="form-check-label" for="flexRadioDefault1">Alta</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="alto" id="flexRadioDefault1" id="baja" value="baja">
+                        <label class="form-check-label" for="flexRadioDefault1">Baja</label>
+                    </div>
                 </form>
                 <form id="fecha">
                     <p>Ingresa la fecha de entrega de tu pedido:</p>
@@ -119,11 +142,15 @@
                 </form>
                 <p>Elige forma de retiro:</p>
                 <form id="retiro">
-                    <input type="radio" id="local" name="local" value="local">
-                    <label for="local">Local: Rosario, Santa Fe.</label><br>
-                    <input type="radio" id="envio" name="envio" value="envio">
-                    <label for="envio">Envío dentro de Rosario.</label><br>
-                    <p>En caso de seleccionar envío, coloca la dirección en los comentarios adicionales.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="retiro" id="flexRadioDefault1" id="local" value="local">
+                        <label class="form-check-label" for="flexRadioDefault1">Baja</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="retiro" id="flexRadioDefault1" id="envio" value="envio">
+                        <label class="form-check-label" for="flexRadioDefault1">Baja</label>
+                    </div>
+                    <p>(En caso de seleccionar envío, coloca la dirección en los comentarios adicionales.)</p>
                 </form>      
             </section>         
 
@@ -141,28 +168,28 @@
                 <h3>Medios de pago:</h3>
         
                 <div id="pagos">
-                    <input type="radio" id="transferencia" name="pago" value="transferencia">
-                    <label for="transferencia">Transferencia Bancaria</label><br>
-        
-                    <input type="radio" id="efectivo" name="pago" value="efectivo">
-                    <label for="efectivo">Efectivo</label><br>
-        
-                    <input type="radio" id="mercado" name="pago" value="mercado">
-                    <label for="mercado">Mercado Pago</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="transferencia" value="transferencia">
+                        <label class="form-check-label" for="flexRadioDefault1">Transferencia Bancaria</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="efectivo" value="efectivo">
+                        <label class="form-check-label" for="flexRadioDefault1">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="mercado" value="mercado">
+                        <label class="form-check-label" for="flexRadioDefault1">Mercado Pago</label>
+                    </div>
                 </div>
         
                 <p>NOTA:</p>
                 <p>El método de pago deseado, se debe aclarar en los comentarios.</p> 
                 <p>El pedido debe estar pago para realizar la entrega del mismo.</p>
                 <button class="btn btn-pedidos btn-outline-success" type="submit">Solicitar pedido.</button>      
-            </section>                       
+            </section>                    
         </section>
     </div>
     
-
- 
-
-
     <!-- Footer -->
     <div class="container-fluid">
         <div class="row">

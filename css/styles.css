@@ -246,23 +246,33 @@ h2 #h2-2 {
 }
 
 /* ----------PEDIDOS----------- */
-.pedidos #order {
-  margin: 3% 0 5% 10%;
+/*.pedidos {
+    #order  {
+        margin: 3% 0 5% 10%;
+    }
+    #resultado {
+        margin: 0 0 5% 10%;
+    }
+    #mediosdepago {
+        margin: 0 0 10% 10%;
+    }
+    .btn-pedidos {
+        color:$celeste_btb;
+        border-color: $celeste_btb;
+        margin-left: 32%;
+            .btn-pedidos:hover {
+                background-color: $celeste_btb;
+                color: $negro;
+            }
+    }
+}*/
+.order-input {
+  display: inline-block;
 }
-.pedidos #resultado {
-  margin: 0 0 5% 10%;
-}
-.pedidos #mediosdepago {
-  margin: 0 0 10% 10%;
-}
-.pedidos .btn-pedidos {
-  color: #95BFB0;
-  border-color: #95BFB0;
-  margin-left: 32%;
-}
-.pedidos .btn-pedidos .btn-pedidos:hover {
-  background-color: #95BFB0;
-  color: #0D0D0D;
+
+.order-label {
+  color: blue;
+  display: inline-block;
 }
 
 /* media queries para celular */

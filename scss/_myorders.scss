@@ -1,6 +1,6 @@
 /* ----------PEDIDOS----------- */
 
-.pedidos {
+/*.pedidos {
     #order  {
         margin: 3% 0 5% 10%;
     }
@@ -19,4 +19,12 @@
                 color: $negro;
             }
     }
+}*/
+
+.order-input {
+    display: inline-block;
+}
+.order-label {
+    color: blue;
+    display: inline-block;
 }
