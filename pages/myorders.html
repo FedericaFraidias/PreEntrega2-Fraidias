@@ -61,9 +61,11 @@
 
 
         <!-- ¿está bien poner dos id, dos names? -->
-        <section class="row">
-            <section class="col" id="order">
-                <p>Elige el gusto:</p>
+        <!--PEDIDO-->
+        <section class="row order-hero">
+            <section class="col-sm-10 col">
+                <h3 class="h3-order">Personaliza tu pedido:</h3>
+                <p class="p-order">Elige el gusto:</p>
                 <form id="gustos">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="vainilla" value="vainilla">
@@ -82,7 +84,7 @@
                         <label class="form-check-label" for="flexRadioDefault1">Red Velvet</label>
                     </div>
                 </form>
-                <p>Elige el relleno:</p>
+                <p class="p-order">Elige el relleno:</p>
                 <form id="rellenos">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="ddl" value="ddl">
@@ -105,7 +107,7 @@
                         <label class="form-check-label" for="flexRadioDefault1">Crema Chantilly</label>
                     </div>
                 </form>
-                <p>Elige la cobertura:</p>
+                <p class="p-order">Elige la cobertura:</p>
                 <form id="cobertura">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="ganache" value="ganache">
@@ -120,12 +122,12 @@
                         <label class="form-check-label" for="flexRadioDefault1">Buttercream de vainilla</label>
                     </div>
                 </form>
-                <p>Cantidad de invitados:</p>
+                <p class="p-order">Cantidad de invitados:</p>
                 <form>
                     <input type="number" id="personas" name="personas" value="personas">
                     <label for="personas"></label>
                 </form>
-                <p>Altura:</p>
+                <p class="p-order">Altura:</p>
                 <form id="altura">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" name="alto" id="flexRadioDefault1" id="alta" value="alta">
@@ -140,7 +142,7 @@
                     <p>Ingresa la fecha de entrega de tu pedido:</p>
                     <input type="date" id="fecha" name="fecha" value="dd/mm/aa" required><br>
                 </form>
-                <p>Elige forma de retiro:</p>
+                <p class="p-order">Elige forma de retiro:</p>
                 <form id="retiro">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" name="retiro" id="flexRadioDefault1" id="local" value="local">
@@ -153,39 +155,50 @@
                     <p>(En caso de seleccionar envío, coloca la dirección en los comentarios adicionales.)</p>
                 </form>      
             </section>         
-
-            <!-- selecciones -->
+            
+            <!-- SELECCIONES -->
             <section id="resultado">
-                <h3>Tus selecciones:</h3>
-                <p>El precio aproximado de tu producto es $ ______</p>
-                <p>Nuestro equipo administrativo se comunicará contigo para coordinar los últimos detalles y el precio final.</p>
-                <p>Ingrese observaciones o comentarios adicionales:</p>
-                <textarea id="comentario" cols="40" rows="10">Comentario...</textarea>
+                <div class="row">
+                    <div class="col-sm-12 col">
+                        <h3 class="h3-order">Tus selecciones:</h3>
+                        <p>El precio aproximado de tu producto es $ ______</p>
+                        <p>Nuestro equipo administrativo se comunicará contigo para coordinar los últimos detalles y el precio final.</p>
+                        <p>Ingrese observaciones o comentarios adicionales:</p>
+                        <textarea id="comentario">Comentario...</textarea>
+                    </div>
+                </div> 
             </section>
         
-            <!-- medios de pago -->
+            <!-- MEDIOS DE PAGO -->
             <section id="mediosdepago">
-                <h3>Medios de pago:</h3>
-        
-                <div id="pagos">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="transferencia" value="transferencia">
-                        <label class="form-check-label" for="flexRadioDefault1">Transferencia Bancaria</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="efectivo" value="efectivo">
-                        <label class="form-check-label" for="flexRadioDefault1">Efectivo</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="mercado" value="mercado">
-                        <label class="form-check-label" for="flexRadioDefault1">Mercado Pago</label>
+                <div class="row">
+                    <div class="col-sm-10 col">
+                        <h3 class="h3-order">Medios de pago:</h3>
+                        <div id="pagos">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="transferencia" value="transferencia">
+                                <label class="form-check-label" for="flexRadioDefault1">Transferencia Bancaria</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="efectivo" value="efectivo">
+                                <label class="form-check-label" for="flexRadioDefault1">Efectivo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="mercado" value="mercado">
+                                <label class="form-check-label" for="flexRadioDefault1">Mercado Pago</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        
-                <p>NOTA:</p>
-                <p>El método de pago deseado, se debe aclarar en los comentarios.</p> 
-                <p>El pedido debe estar pago para realizar la entrega del mismo.</p>
-                <button class="btn btn-pedidos btn-outline-success" type="submit">Solicitar pedido.</button>      
+
+                <div class="row">
+                    <div class="col-sm-12 col-12 nota">
+                        <p>NOTA:</p>
+                        <p>El método de pago deseado, se debe aclarar en los comentarios.</p> 
+                        <p>El pedido debe estar pago para realizar la entrega del mismo.</p>
+                        <button class="btn btn-order btn-outline-success" type="submit">Solicitar pedido.</button>
+                    </div>
+                </div>                 
             </section>                    
         </section>
     </div>

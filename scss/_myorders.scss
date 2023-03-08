@@ -1,50 +1,57 @@
 /* ----------PEDIDOS----------- */
 
-.pedidos {
-    #order  {
-        margin: 3% 0 5% 10%;
+.order-hero {
+    margin: 3% 10% 8% 11%;
+    .h3-order {
+        font-size: 1.3rem;
+        color: $rosa_fuerte;
+        font-weight: bold;
     }
-    #resultado {
-        margin: 0 0 5% 10%;
+    .p-order {
+        margin: 5% 0 1% 0;
     }
-    #mediosdepago {
-        margin: 0 0 10% 10%;
+    #comentario {
+        width: 80%;
+        height: 40%;
+        margin-bottom: 15%;
     }
-    .btn-pedidos {
-        color:$celeste_btb;
-        border-color: $celeste_btb;
-        margin-left: 32%;
-            .btn-pedidos:hover {
-                background-color: $celeste_btb;
-                color: $negro;
-            }
+    .nota {
+        line-height: 0.4rem;
+        margin: 4% 0 4% 0;
+        font-weight: bold;
     }
+    .btn-order {
+        margin: 2% 0 0 35%;
+        color: $rosa_fuerte;
+        border: $rosa_fuerte 1px solid;
+    }
+
+    .btn-order:hover {
+    background-color: $rosa_fuerte;
+    color: black;
+    border: 1px solid black;
+    }    
 }
 
 /* MEDIA QUERIES SM*/
 @media screen and (max-width: 576px) {
-    .pedidos {
-        #order  {
-            margin: 3% 0 5% 10%;
+    .order-hero {
+        margin: 5% 0 5% 0.1%;
+        font-size: 0.9rem;
+        .h3-order {
+            font-size: 1.2rem;
+            margin-left: -1%;
         }
-        #resultado {
-            margin: 0 0 0 10%;
-            #comentario {
-                width: 80%;
-                height: 30%;
-            }
+        #comentario {
+            width: 100%;
+            height: 30%;
+            margin-bottom: 20%;
         }
-        #mediosdepago {
-            margin: 0 0 10% 10%;
+        .nota {
+            line-height: 1rem;
         }
-        .btn-pedidos {
-            color:$celeste_btb;
-            border-color: $celeste_btb;
-            margin-left: 32%;
-                .btn-pedidos:hover {
-                    background-color: $celeste_btb;
-                    color: $negro;
-                }
-        }
+        .btn-order {
+            margin: 5% 0 0 30%;
+        } 
     }
 }
