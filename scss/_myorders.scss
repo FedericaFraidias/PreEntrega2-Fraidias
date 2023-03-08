@@ -1,6 +1,6 @@
 /* ----------PEDIDOS----------- */
 
-/*.pedidos {
+.pedidos {
     #order  {
         margin: 3% 0 5% 10%;
     }
@@ -19,12 +19,32 @@
                 color: $negro;
             }
     }
-}*/
-
-.order-input {
-    display: inline-block;
 }
-.order-label {
-    color: blue;
-    display: inline-block;
+
+/* MEDIA QUERIES SM*/
+@media screen and (max-width: 576px) {
+    .pedidos {
+        #order  {
+            margin: 3% 0 5% 10%;
+        }
+        #resultado {
+            margin: 0 0 0 10%;
+            #comentario {
+                width: 80%;
+                height: 30%;
+            }
+        }
+        #mediosdepago {
+            margin: 0 0 10% 10%;
+        }
+        .btn-pedidos {
+            color:$celeste_btb;
+            border-color: $celeste_btb;
+            margin-left: 32%;
+                .btn-pedidos:hover {
+                    background-color: $celeste_btb;
+                    color: $negro;
+                }
+        }
+    }
 }

@@ -6,6 +6,7 @@
         font-size: 1.2rem;
         padding-left: 15%;
     }
+
     .container-img {
         position: relative;
         overflow: hidden;
@@ -29,4 +30,51 @@
             display: inline-block;
             margin: 5% 4% 5% 4%;
         }
+}
+
+
+/* MEDIA QUERIES SM*/
+@media screen and (max-width: 576px) {
+    .hero {
+        position: relative;
+        overflow: hidden;
+        .instagram {
+            padding-left: 0;
+            .container-img {
+                width: 110%;
+                height: 260px;
+                margin-top: 10%;
+            }
+        }
+        .container-img-hero {
+            width: 130%;
+            height: 250px;
+            padding-right: 15%;
+
+        }
+        .container-p {
+            font-size: 0.85rem;
+            line-height: 180%;
+            color: $negro;
+            letter-spacing: 0.03rem;
+            padding-left: 0;
+                #aboutus {
+                    width: 200%;
+                    font-size: 0.7rem;
+                    line-height: 180%;
+                }
+        }
+
+    }
+    
+    #carousel {
+        padding: 0;
+        margin: 0;
+        margin-top: 5%;
+       .carousel-img {
+            width: 29%;
+            margin: 0 1.65% 10% 1.75%;
+        }
+    }
+
 }

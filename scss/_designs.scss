@@ -6,3 +6,16 @@
             margin-bottom: 2.5%;
         }
 }
+
+/* MEDIA QUERIES P/ CELULARES*/
+@media screen and (max-width: 576px) {
+    #galeria {
+        margin: 0;
+            .col-3.galeria {
+                width: 52%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+       }
+    
+}

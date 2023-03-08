@@ -20,3 +20,27 @@ h2 {
     padding-top: 8%;
     }
 }
+
+/* MEDIA QUERIES P/ CELULARES*/
+@media screen and (max-width: 576px) {
+    .titulo {
+        font-size: 1.45rem;
+        margin-top: 8%;
+
+    }
+    h2 {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .titulos-sec {
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+
+    #h3-contact {
+        margin: 5% 0 8% 0;
+        color: $rosa_fuerte;
+        font-size: 1.25rem;
+    }
+}

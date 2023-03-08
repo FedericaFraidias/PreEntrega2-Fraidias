@@ -41,3 +41,60 @@
                     }
                 }
 }    
+
+/* ----MEDIA QUERIES SM----*/
+@media screen and (max-width: 576px) {
+    .navbar-search {
+        display: inline;
+            #navbarSupportedContentSearch {
+                display: inline;
+                    .navbar-nav-search {
+                        display: inline;
+                            .nav-item-search .nav-link-search {
+                                font-size: 0.5rem;
+                            }
+                    }
+            }
+                .btn-search {
+                    width: 50px;
+                    height: 20px;
+                    position: relative;
+                    font-size: 12.5px;
+                    padding-left: 3px;
+                    padding-bottom: 22px;
+                }
+    }    
+
+    /* No logré sacar el espacio superior entre el h2 y el nav search*/
+    .col.d-flex {
+        .card {
+            box-shadow: 0.2rem 0.1rem 0.8em $celeste_btb;
+            width: 60%;
+        }
+    }    
+    
+    /* Sección search */
+    .navbar-search {
+        width: 80%;
+        margin-left: 9%;
+            #navbarSupportedContentSearch {
+                background-color: $blanco;
+                    .navbar-nav-search {
+                        list-style: none;
+                            .nav-item-search .nav-link-search {
+                                color:#4e4e4e;
+                                text-decoration: none;
+                                font-size: 1.1rem;
+                            }
+                    }
+            }
+            .btn-search {
+                color:$celeste_btb;
+                border-color: $celeste_btb;
+                    .btn-search:hover {
+                        background-color: $celeste_btb;
+                    }
+            }
+    }  
+    
+}
