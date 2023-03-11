@@ -497,79 +497,64 @@ h2 {
     margin: 5% 0 0 30%;
   }
 }
-/* media queries para tablet */
-@media screen and (min-width: 766px) and (max-width: 1020px) {
-  /* INDEX */
-  .titulo {
-    font-size: 2.5rem;
-    margin-top: 8%;
-    margin-bottom: 5%;
+@keyframes shadow {
+  0% {
+    text-shadow: 2px 2px 2px #D96A7E;
   }
-  .nav-link {
-    font-size: 1rem;
-    padding: 8%;
-    letter-spacing: 0.05rem;
+  25% {
+    text-shadow: -2px 2px 2px #D96A7E;
   }
-  .header #banner {
-    max-height: 180px;
+  50% {
+    text-shadow: -4px 2px 2px #D96A7E;
   }
-  h2 {
-    font-size: 1.75rem;
-    margin-left: 0;
+  75% {
+    text-shadow: -2px 2px 2px #D96A7E;
   }
-  .aboutus {
-    line-height: 3rem;
-    font-size: 1rem;
+  100% {
+    text-shadow: 2px 2px 2px #D96A7E;
   }
-  p #event {
-    line-height: 10rem;
-    font-size: 5rem;
-  }
-  .inst {
-    width: 100%;
-    max-height: 410px;
-    min-height: 70%;
-    display: flex;
-  }
-  #event {
-    line-height: 10%;
-    font-size: 0.7rem;
-  }
-  .carousel-img {
-    width: 30%;
-    display: inline-block;
-    margin: 3% 1% 5% 1%;
-  }
-  #footer-top {
-    height: 50%;
-    margin: 0%;
-  }
-  .footer {
-    font-size: 0.35rem;
-    margin: 0.8%;
-  }
-  .nav-item-footer {
-    padding: 0;
-    margin-right: 1%;
-  }
-  .nav-link.active {
-    padding: 0%;
-  }
-  /* DISEÑOS */
-  .titulos-sec {
-    font-size: 1.6rem;
-    margin-top: 5%;
-  }
-  .back {
-    font-size: 1rem;
-  }
-  #galeria {
-    margin: 0;
-  }
-  .col-3.galeria {
-    width: 52%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+}
+.const-body {
+  background-color: #FFE0DE;
+}
+.const-body .row-const {
+  flex-direction: row;
+}
+.const-body .row-const .hero-const {
+  margin-top: 20%;
+  text-align: center;
+}
+.const-body .row-const .hero-const i {
+  align-items: center;
+  justify-content: center;
+  color: orange;
+  font-size: 2rem;
+}
+.const-body .row-const .hero-const h1 {
+  color: #D96A7E;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+.const-body .row-const .hero-const p {
+  font-size: 1.2rem;
+  margin-bottom: 3%;
+  color: #0D0D0D;
+  animation-name: shadow;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.const-body .row-const .hero-const .btn {
+  color: #95BFB0;
+  font-weight: bold;
+}
+
+/* MEDIA QUERIES SM*/
+@media screen and (max-width: 576px) {
+  .const-body .row-const .hero-const p {
+    font-size: 0.85rem;
   }
 }
 body {

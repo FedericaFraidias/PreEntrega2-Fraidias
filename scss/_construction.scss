@@ -1,0 +1,54 @@
+@keyframes shadow {
+    0% {text-shadow: 2px 2px 2px $rosa_fuerte;}
+    25% {text-shadow: -2px 2px 2px $rosa_fuerte;}
+    50% {text-shadow: -4px 2px 2px $rosa_fuerte;}
+    75% {text-shadow: -2px 2px 2px $rosa_fuerte;}
+    100% {text-shadow: 2px 2px 2px $rosa_fuerte;}
+}
+
+.const-body {
+    background-color: $rosa_pastel;
+    .row-const {
+        flex-direction: row;
+        .hero-const {
+            margin-top: 20%;
+            text-align: center;
+            i {
+                align-items:center;
+                justify-content: center;
+                color: orange;
+                font-size: 2rem;
+                
+            }
+            h1 {
+                color: $rosa_fuerte;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 3%;
+            }
+        
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 3%;
+                color: $negro;
+                animation-name: shadow;
+                animation-duration: 5s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+                animation-direction: normal;  
+            }
+            .btn {
+                color: $celeste_btb;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+/* MEDIA QUERIES SM*/
+@media screen and (max-width: 576px) {
+    .const-body .row-const .hero-const p {
+        font-size: 0.85rem;
+    }
+}
