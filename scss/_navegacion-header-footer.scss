@@ -93,8 +93,7 @@
 
 
     #footer-top {
-        height: 10%;
-        width: 100%;
+        @include sizes (100%, 10%);
         .nav-item-footer {
             padding-left: 5px;
             padding-right: 5px;

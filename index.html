@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <title>Born To Bake - Pastelería & Repostería</title>
+  <meta name="description" value="Pastelería personalizada para eventos. Escoge tus diseños y creemos la torta de tus sueños.">
+  <meta name="keywords" value="Tortas de personajes, Tortas Rosario, Pasteleria personalizada">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +14,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+    
+
   <!-- Banner -->
   <div class="container-fluid">
     <div class="row">
@@ -52,15 +57,16 @@
     </div>
   </nav>
 
-  <!-- Titulo -->
-  <div class="container">
+
+
+  <div class="container" data-aos="fade-up">
     <div class="row">
       <h1 class="titulo" id="titulo"><b>¡Born To Bake te da la bienvenida!</b></h1>
     </div> 
   </div>
 
   <!-- Body -->
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <!-- H2 -->
     <div class="container">
       <div class="row col-10">
@@ -177,5 +183,9 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
