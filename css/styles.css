@@ -18,6 +18,7 @@
   background-color: #FFE0DE;
   margin: 0%;
   padding: 0%;
+  text-align: center;
 }
 .navbar .menu .navbar-toggler-icon {
   width: 1rem;
@@ -30,6 +31,10 @@
 }
 .navbar .menu .navbar-collapse .navbar-nav .nav-link.active {
   color: #D96A7E;
+  margin: 0 30px 0 30px;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 1.2rem;
 }
 .navbar .menu .navbar-collapse .navbar-nav .nav-link.active .nav-item {
   margin-left: 7%;
@@ -349,17 +354,22 @@ h2 {
 }
 /* ---------CONTACTO-----------*/
 #h3-contact {
-  margin-top: 2%;
-  margin-left: 16%;
+  margin-top: 5%;
+  margin-left: 35%;
   margin-bottom: 2.5%;
   color: #D96A7E;
 }
 
-#mapa {
-  width: 60%;
-  height: 120%;
-  margin-left: 10%;
-  margin-bottom: 3%;
+.mapa-redes {
+  padding-bottom: 1%;
+  height: 375px;
+}
+.mapa-redes .mapa {
+  height: 375px;
+}
+.mapa-redes .mapa #mapa {
+  width: 100%;
+  height: 100%;
 }
 
 #redes {
@@ -375,11 +385,9 @@ h2 {
 
 /*Contact Form*/
 #contact_form {
-  width: 70%;
+  width: 100%;
   height: auto;
-  margin-left: 17%;
-  margin-bottom: 8%;
-  margin-top: 10%;
+  margin: 8% 0 8% 25%;
 }
 
 #contact_form label {
@@ -403,38 +411,35 @@ h2 {
 
 #contact_form button {
   display: block;
-  margin-left: 54%;
+  margin-left: 0;
   margin-top: 1%;
 }
 
 /*-------MEDIA QUERIES SM-------*/
 @media screen and (max-width: 576px) {
-  #mapa {
+  #h3-contact {
+    margin-left: 0;
+  }
+  .mapa-redes {
+    padding-bottom: 1%;
+    height: 250px;
+  }
+  .mapa-redes .mapa {
+    height: 248px;
+  }
+  .mapa-redes .mapa #mapa {
     width: 100%;
     height: 100%;
-    margin-bottom: 3%;
-    margin-left: 0;
   }
-  #redes {
-    line-height: 1.2rem;
+  .mapa-redes .redes {
+    width: 100%;
   }
-  #contacto p {
-    line-height: 13rem;
+  .mapa-redes .redes .bi {
+    margin-bottom: -5%;
   }
-  /*Contact Form*/
   #contact_form {
-    width: 150%;
-    margin-left: 0%;
-  }
-  #contact_form textarea {
-    height: 150px;
-  }
-  #contact_form button {
-    margin-left: 0;
-    width: 10%;
-    height: 25px;
-    padding: 0;
-    color: #95BFB0;
+    margin-top: 40%;
+    margin: 40% 0 10% 0;
   }
 }
 /* ----------PEDIDOS----------- */
@@ -460,7 +465,7 @@ h2 {
   font-weight: bold;
 }
 .order-hero .btn-order {
-  margin: 2% 0 0 38%;
+  margin: 2% 0 0 40%;
   color: #D96A7E;
   border: #D96A7E 1px solid;
 }

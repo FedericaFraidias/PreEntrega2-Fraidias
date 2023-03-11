@@ -12,32 +12,37 @@
 /* Navegación */
 .navbar {
     padding: 0%;
-        .menu {
-            background-color: $rosa_pastel;
-            margin: 0%;
-            padding: 0%;
-                .navbar-toggler-icon {
-                    width: 1rem;
-                }
-                .navbar-collapse {
-                    justify-content: center;
-                    background-color: $rosa_pastel;
-                    align-items: center;
-                    margin-bottom: 0%;
-                    .navbar-nav .nav-link.active {
-                        color: $rosa_fuerte;
-                            .nav-item {
-                                margin-left: 7%;
-                                margin-right: 7%;
-                                ul li a:hover {
-                                    color: $rosa_oscuro;
-                                    font-size: 1.15rem;
-                                    text-shadow: 0 0.2rem 0.8rem $rosa_oscuro;
-                                    }
-                                }
-                        }
-                }
+    .menu {
+        background-color: $rosa_pastel;
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+        .navbar-toggler-icon {
+            width: 1rem;
         }
+    .navbar-collapse {
+        justify-content: center;
+        background-color: $rosa_pastel;
+        align-items: center;
+        margin-bottom: 0%;
+        .navbar-nav .nav-link.active {
+            color: $rosa_fuerte;
+            margin: 0 30px 0 30px;
+            padding-right: 0;
+            padding-left: 0;
+            font-size: 1.2rem;
+            .nav-item {
+                margin-left: 7%;
+                margin-right: 7%;
+                ul li a:hover {
+                    color: $rosa_oscuro;
+                    font-size: 1.15rem;
+                    text-shadow: 0 0.2rem 0.8rem $rosa_oscuro;
+                }
+            }
+        }
+        }
+    }
 }
 
 /* Footer */

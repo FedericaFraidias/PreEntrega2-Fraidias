@@ -1,15 +1,21 @@
 /* ---------CONTACTO-----------*/
 #h3-contact {
-    margin-top: 2%;
-    margin-left: 16%;
+    margin-top: 5%;
+    margin-left: 35%;
     margin-bottom: 2.5%;
     color: $rosa_fuerte;
 }
 
-#mapa {
-    @include sizes (60%, 120%);
-    margin-left: 10%;
-    margin-bottom: 3%;
+.mapa-redes {
+    padding-bottom: 1%;
+    height: 375px;
+    .mapa {
+        height: 375px;
+        #mapa {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 #redes {
@@ -25,10 +31,8 @@
 
 /*Contact Form*/
 #contact_form {
-    @include sizes (70%, auto);
-    margin-left: 17%;
-    margin-bottom: 8%;
-    margin-top: 10%;
+    @include sizes (100%, auto);
+    margin: 8% 0 8% 25%;
 }
 
 #contact_form label {
@@ -49,40 +53,38 @@
 }
 #contact_form button {
     display: block;
-    margin-left: 54%;
+    margin-left: 0;
     margin-top: 1%;
 }
 
 /*-------MEDIA QUERIES SM-------*/
 @media screen and (max-width: 576px) {
-    #mapa {
-        @include sizes (100%, 100%);
-        margin-bottom: 3%;
+    #h3-contact {
         margin-left: 0;
     }
-    
-    #redes {
-        line-height: 1.2rem;
+
+    .mapa-redes {
+        padding-bottom: 1%;
+        height: 250px;
+        .mapa {
+            height: 248px;
+            #mapa {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .redes {
+            width: 100%;        
+            .bi {
+                margin-bottom: -5%;
+            }
+        }
     }
-    
-    #contacto p {
-        line-height: 13rem;
-    }
-    
-    /*Contact Form*/
+
     #contact_form {
-        width: 150%;
-        margin-left: 0%;
+        margin-top: 40%;
+        margin: 40% 0 10% 0;      
     }
 
-    #contact_form textarea {
-        height: 150px;
-    }
-
-    #contact_form button {
-        margin-left: 0;
-        @include sizes (10%, 25px);
-        padding: 0;
-        color: $celeste-btb;
-    }
 }
+    
