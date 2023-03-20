@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FFFDFD;
+}
+
 .header {
   background-color: #FFE0DE;
   width: 100%;
@@ -259,22 +264,49 @@ h2 {
   }
 }
 /* ----------PRODUCTOS----------*/
-.col.d-flex {
+.section-product {
+  margin-bottom: 8%;
+}
+.section-product .col.d-flex {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.col.d-flex .card {
-  box-shadow: 0.2rem 0.1rem 2.5em #95BFB0;
-  border-radius: 5%;
+.section-product .col.d-flex .card {
+  border-radius: 4%;
+  box-shadow: 0 0.1rem 0.6rem black;
+  border: none;
   margin: 5% 0 5% 0;
   width: 400px;
+  margin-bottom: 1%;
 }
-.col.d-flex .card .card-img-overlay {
+.section-product .col.d-flex .card .card-img-overlay {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #FFFDFD;
+}
+.section-product .col.d-flex .card .card-img-overlay .card-title {
+  margin: 0;
+  text-shadow: 0.1rem 0.1rem 0.4rem black;
+  font-weight: bold;
+}
+.section-product .col.d-flex .card .card-img-top {
+  border-radius: 4%;
+}
+.section-product .modal-dialog {
+  margin-top: 0.5%;
+}
+.section-product .modal-dialog .modal-title {
+  font-weight: bolder;
+  color: #95BFB0;
+}
+.section-product .modal-dialog .modal-footer {
+  justify-content: center;
+}
+.section-product .modal-dialog .modal-footer .modal-button {
+  background-color: #BF5E70;
+  border: none;
 }
 
 /* Sección search */
@@ -326,7 +358,10 @@ h2 {
   /* No logré sacar el espacio superior entre el h2 y el nav search*/
   .col.d-flex .card {
     box-shadow: 0.2rem 0.1rem 0.8em #95BFB0;
-    width: 60%;
+    max-width: 250px;
+  }
+  .col.d-flex .modal-dialog {
+    margin-top: 20%;
   }
   /* Sección search */
   .navbar-search {
@@ -353,7 +388,7 @@ h2 {
   }
 }
 /* ---------CONTACTO-----------*/
-#h3-contact {
+#h2-contact {
   margin-top: 5%;
   margin-left: 35%;
   margin-bottom: 2.5%;
@@ -417,7 +452,7 @@ h2 {
 
 /*-------MEDIA QUERIES SM-------*/
 @media screen and (max-width: 576px) {
-  #h3-contact {
+  #h2-contact {
     margin-left: 0;
   }
   .mapa-redes {
@@ -446,7 +481,7 @@ h2 {
 .order-hero {
   margin: 3% 10% 8% 11%;
 }
-.order-hero .h3-order {
+.order-hero .h2-order {
   font-size: 1.3rem;
   color: #D96A7E;
   font-weight: bold;
@@ -481,7 +516,7 @@ h2 {
     margin: 5% 0 5% 0.1%;
     font-size: 0.9rem;
   }
-  .order-hero .h3-order {
+  .order-hero .h2-order {
     font-size: 1.2rem;
     margin-left: -1%;
   }
@@ -557,11 +592,6 @@ h2 {
     font-size: 0.85rem;
   }
 }
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #FFFDFD;
-}
-
 /* 
 col-xs <576 mobile large según Google
 col-md >768 tablet según Google

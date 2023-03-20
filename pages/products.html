@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <div class="row">
             <header class="header" id="inicio">
-                <img id="banner" src="../photos/logo.png">
+                <a href="../index.html"><img id="banner" src="../photos/logo.png"></a>
             </header>
         </div>
     </div>
@@ -69,10 +69,10 @@
                       Categorías
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Personalizado</a></li>
-                      <li><a class="dropdown-item" href="#">Tartas</a></li>
-                      <li><a class="dropdown-item" href="#">Clásicas</a></li>
-                      <li><a class="dropdown-item" href="#">Otros</a></li>
+                      <li><a class="dropdown-item" href="#personalizado">Personalizado</a></li>
+                      <li><a class="dropdown-item" href="#tartas">Tartas</a></li>
+                      <li><a class="dropdown-item" href="#clasicas">Clásicas</a></li>
+                      <li><a class="dropdown-item" href="#otros">Otros</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -86,39 +86,201 @@
     </section>
 
     <!-- SECCIÓN PRODUCTOS -->
-    <section class="row">
-        <section class="col d-flex">
-            <div class="card" >
-                <img class="card-img-top" src="../photos/drstrangecuadrado.jpg" alt="Dr. Strange torta alta.">
-                <div class="card-img-overlay d-flex text-center" id="personalizado">
-                    <h4 class="card-title">PERSONALIZADO</h4>
-                </div>
+    <section class="container-fluid section-product">
+        <section class="row">
+            <div class="col-sm-12 col-12">
+                <section class="col d-flex">
+                    <!-- trigger modal 1-->
+                    <div class="card">
+                        <img class="card-img-top" src="../photos/drstrangecuadrado.jpg" alt="Dr. Strange torta alta.">
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="card-img-overlay d-flex text-center" id="personalizado">
+                            <h2 class="card-title">PERSONALIZADO</h2>
+                        </div>
+                    </div>
+                    <!-- Modal 1-->
+                    <div class="modal fade" id="exampleModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="exampleModalLabel">DISEÑOS PERSONALIZADOS</h3>
+                                <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                </div>
+                                <section class="modal-body">
+                                <!-- MODAL CARRUSEL  1-->
+                                    <div id="carouselExample" class="carousel slide">
+                                        <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../photos/masha.jpg" class="d-block w-100" alt="Torta de dos niveles, diseño de Masha y el Oso">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../photos/groot.jpg" class="d-block w-100" alt="Torta realista diseño Baby Groot">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../photos/abrol.jpg" class="d-block w-100" alt="Torta con diseño de árbol japonés">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../photos/drstrangecuadrado.jpg" class="d-block w-100" alt="Torta alta, diseño vestuario Dr. Strange">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../photos/mamma.jpg" class="d-block w-100" alt="Torta diseño casa griega Mamma Mia">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../photos/vaquita.jpg" class="d-block w-100" alt="Torta diseño Vaquita de San Antonio">
+                                        </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <div class="modal-footer">
+                                <a href="./myorders.html#personalizado"><button type="button" class="btn btn-primary modal-button">Quiero personalizar mi diseño.</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- trigger modal 2-->
+                    <div class="card">
+                        <img class="card-img-top" src="../photos/tartadecoco.jpg" alt="Tarta de coco y dulce de leche.">
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModalTarta" class="card-img-overlay d-flex text-center" id="tartas">
+                            <h2 class="card-title">TARTAS</h2>
+                        </div>
+                    </div>
+                    <!-- Modal 2-->
+                    <div class="modal fade" id="exampleModalTarta">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="exampleModalLabel">TARTAS</h3>
+                                <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                </div>
+                                <section class="modal-body">
+                                <!-- MODAL CARRUSEL  2-->
+                                    <div id="carouselExample" class="carousel slide">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../photos/tartadecoco.jpg" class="d-block w-100" alt="Tarta de coco y dulce de leche.">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="../photos/3.jpg"  alt="Torta galleta n° 3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <div class="modal-footer">
+                                <a href="./myorders.html#personalizado"><button type="button" class="btn btn-primary modal-button">Quiero hacer mi pedido.</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+
+                    <!-- trigger modal 3-->
+                    <div class="card">
+                        <img class="card-img-top" src="../photos/tortachocolate.jpg" alt="Torta clásica de chocolate.">
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModalClasicas" class="card-img-overlay d-flex text-center" id="clasicas">
+                            <h2 class="card-title">CLÁSICAS</h2>
+                        </div>
+                    </div>
+                    <!-- Modal 3-->
+                    <div class="modal fade" id="exampleModalClasicas">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="exampleModalLabel">TORTAS CLÁSICAS.</h3>
+                                <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                </div>
+                                <section class="modal-body">
+                                <!-- MODAL CARRUSEL  3-->
+                                    <div id="carouselExample" class="carousel slide">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../photos/tortachocolate.jpg" class="d-block w-100" alt="Torta clásica de chocolate.">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../photos/cupcakes.jpg" class="d-block w-100" alt="Cupcakes de manzana.">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../photos/cookies.jpg" class="d-block w-100" alt="Cookies de chocolate.">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../photos/redvelvet.jpg" class="d-block w-100" alt="Cupcakes de Red Velvet.">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <div class="modal-footer">
+                                <a href="./myorders.html#personalizado"><button type="button" class="btn btn-primary modal-button">Quiero hacer mi pedido.</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                    
+                    <!-- trigger modal 4-->
+                    <div class="card">
+                        <img class="card-img-top" src="../photos/rosas.jpg" alt="Ramo de cupcakes con decoración de rosas">
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModalEspeciales" class="card-img-overlay d-flex text-center" id="otros">
+                            <h2 class="card-title">BOXES ESPECIALES</h2>
+                        </div>
+                    </div>
+                    <!-- Modal 4-->
+                    <div class="modal fade" id="exampleModalEspeciales">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h3 class="modal-title fs-5" id="exampleModalLabel">BOXES ESPECIALES</h3>
+                                <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                </div>
+                                <section class="modal-body">
+                                <!-- MODAL CARRUSEL  4-->
+                                    <div id="carouselExample" class="carousel slide">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../photos/rosas.jpg" class="d-block w-100" alt="Ramo de cupcakes con decoración de rosas">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <div class="modal-footer">
+                                <a href="./myorders.html#personalizado"><button type="button" class="btn btn-primary modal-button">Quiero hacer mi pedido.</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="card" >
-                <img class="card-img-top" src="../photos/tartadecoco.jpg" alt="Tarta de coco y dulce de leche.">
-                <div class="card-img-overlay d-flex text-center">
-                    <h4 class="card-title">TARTAS</h4>
-                </div>
-            </div>
-            <div class="card" >
-                <img class="card-img-top" src="../photos/tortachocolate.jpg" alt="Torta clásica de chocolate.">
-                <div class="card-img-overlay d-flex text-center">
-                    <h4 class="card-title">CLÁSICAS</h4>
-                </div>
-            </div>
-            <div class="card" >
-                <img class="card-img-top" src="../photos/rosas.jpg" alt="Ramo de cupcakes de rosas.">
-                <div class="card-img-overlay d-flex text-center">
-                    <h4 class="card-title">BOXES ESPECIALES</h4>
-                </div>
-            </div>
-            </section>
-        </section>
+        </section>                
     </section>
-
-
-
-
 
     <!-- Footer -->
     <div class="container-fluid">

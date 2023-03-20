@@ -1,22 +1,50 @@
 /* ----------PRODUCTOS----------*/
 
-.col.d-flex {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .card {
-        box-shadow: 0.2rem 0.1rem 2.5em $celeste_btb;
-        border-radius: 5%;
-        margin: 5% 0 5% 0;
-        width: 400px;
-            .card-img-overlay {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: $blanco;
+.section-product {
+    margin-bottom: 8%;
+    .col.d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card {
+            border-radius: 4%;
+            box-shadow: 0 0.1rem 0.6rem black;
+            border: none;
+            margin: 5% 0 5% 0;
+            width: 400px;
+            margin-bottom: 1%;
+                .card-img-overlay {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $blanco;
+                    .card-title {
+                        margin: 0;
+                        text-shadow: 0.1rem 0.1rem 0.4rem black;
+                        font-weight: bold;
+                    }
+                }
+                .card-img-top {
+                    border-radius: 4%;
+                }
+        }
+    }
+    .modal-dialog {
+        margin-top: 0.5%;
+        .modal-title {
+            font-weight: bolder;
+            color: $celeste_btb;
+        }
+        .modal-footer {
+            justify-content: center;
+            .modal-button {
+                background-color: $rosa_oscuro;
+                border: none;
             }
+        }
     }
 }
+
 
     /* Sección search */
 .navbar-search {
@@ -41,6 +69,8 @@
                     }
                 }
 }    
+
+
 
 /* ----MEDIA QUERIES SM----*/
 @media screen and (max-width: 576px) {
@@ -68,7 +98,10 @@
     .col.d-flex {
         .card {
             box-shadow: 0.2rem 0.1rem 0.8em $celeste_btb;
-            width: 60%;
+            max-width: 250px;
+        }
+        .modal-dialog {
+            margin-top: 20%;
         }
     }    
     

@@ -1,5 +1,6 @@
 @import "mixins.scss";
 @import "paleta-de-colores";
+@import "global";
 @import "navegacion-header-footer";
 @import "titulos";
 @import "index";
@@ -8,13 +9,6 @@
 @import "contact";
 @import "myorders";
 @import "construction";
-
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: $blanco;
-}
-
 
 /* 
 col-xs <576 mobile large según Google
