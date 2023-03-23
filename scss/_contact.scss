@@ -7,14 +7,14 @@
     gap: 10px;
     overflow: hidden;
     align-items: center;
+
+
     // titulos
-    .grid-h1 {
-        grid-column: 3/10;
-    }
 
     #grid-h2 {
         grid-column: 3/8;
         margin-left: 0;
+        color: $rosa_fuerte;
     }
 
     // mapa
@@ -26,10 +26,12 @@
 
     // redes
     .grid-redes {
-        display: inline;
+        display: grid;
         height: 100%;
         grid-column: 8/11;
-        text-align: end;
+        align-content: space-between;
+        justify-content: center;
+        justify-items: start;
     }
     
     #contact_form {
@@ -39,6 +41,19 @@
         margin: 8% 0 8% 0;
     }
 }
+.grid-h {
+    display: grid;
+    overflow: hidden;
+    background-color: lawngreen;
+    .grid-h1 {
+        grid-column-start: 3;
+    }
+    .grid-back {
+        grid-column: 8/11;
+    }
+
+}
+// NO FUNCIONA!!!!!!!!
 
 
 /*Contact Form*/
@@ -66,7 +81,42 @@
 }
 
 
-/*-------MEDIA QUERIES SM-------*/
-@media screen and (max-width: 576px) {
+/*-------MEDIA QUERIES MD-------*/
+@media screen and (max-width: 769px) {
+    .grid {
+        #grid-h2, .grid-h1, #contact_form, .grid-iframe, .grid-redes {
+            grid-column: 2/12;
+        } 
+        .redes {
+            text-align: start;
+            align-content: stretch;
+            justify-content: space-between;
+            justify-items: stretch;
+        }
+        #contact_form {
+            margin-top: 2%;
+        }
+        #contact_form input{
+            width: 50%;
+        }
+        #contact_form textarea {
+            width: 100%;
+        }
+    }
+}
 
-} 
+/*-------MEDIA QUERIES SM-------*/
+@media screen and (max-width: 426px) {
+    .grid {
+        .grid-iframe {
+            height: 100%;
+        }
+        .grid-redes {
+            font-size: 0.8rem;
+            margin-top: 5%;
+        }
+        #contact_form {
+            font-size: 0.9rem;
+        }
+    }
+}
