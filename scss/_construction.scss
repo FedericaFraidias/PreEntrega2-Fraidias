@@ -7,11 +7,12 @@
 }
 
 .const-body {
-    background-color: $rosa_pastel;
+    background-color: $blanco;
     .row-const {
         flex-direction: row;
         .hero-const {
             margin-top: 20%;
+            margin-bottom: 20%;
             text-align: center;
             i {
                 align-items:center;
@@ -30,7 +31,7 @@
             p {
                 font-size: 1.2rem;
                 margin-bottom: 3%;
-                color: $negro;
+                color: $rosa_oscuro;
                 animation-name: shadow;
                 animation-duration: 5s;
                 animation-timing-function: ease;

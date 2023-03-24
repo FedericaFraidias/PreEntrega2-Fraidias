@@ -193,7 +193,7 @@ h2 {
 }
 
 #carousel {
-  padding-top: 6.5%;
+  padding-top: 4%;
   padding-bottom: 4%;
 }
 #carousel .carousel-item {
@@ -581,13 +581,14 @@ h2 {
   }
 }
 .const-body {
-  background-color: #FFE0DE;
+  background-color: #FFFDFD;
 }
 .const-body .row-const {
   flex-direction: row;
 }
 .const-body .row-const .hero-const {
   margin-top: 20%;
+  margin-bottom: 20%;
   text-align: center;
 }
 .const-body .row-const .hero-const i {
@@ -605,7 +606,7 @@ h2 {
 .const-body .row-const .hero-const p {
   font-size: 1.2rem;
   margin-bottom: 3%;
-  color: #0D0D0D;
+  color: #BF5E70;
   animation-name: shadow;
   animation-duration: 5s;
   animation-timing-function: ease;
