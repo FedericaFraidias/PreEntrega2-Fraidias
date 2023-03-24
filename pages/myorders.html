@@ -54,150 +54,152 @@
 
     <div class="container pedidos">
         <!-- Titulo -->
-        <section class="row text-center align-items-center justify-content-between top">
-            <div class="col-5"><h1 id="titulo" class="titulos-sec"><b>Mi Pedido.</b></h1></div>
-            <div class="col-5"><a class="back" href="../index.html">Volver al inicio</a></div>
+        <section class="flex-container">
+            <div class="flex-item"><h1 class="titulos-sec"><b>Mi Pedido.</b></h1></div>
+            <div class="flex-item"><a class="back" href="../index.html">Volver al inicio</a></div>
         </section>
 
 
-        <!-- ¿está bien poner dos id, dos names? -->
         <!--PEDIDO-->
         <section class="row order-hero">
             <section class="col-sm-10 col">
                 <h2 class="h2-order">Personaliza tu pedido:</h2>
                 <p class="p-order">Elige el gusto:</p>
-                <form id="gustos">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="vainilla" value="vainilla">
-                        <label class="form-check-label" for="flexRadioDefault1" >Vainilla</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="chocolate" value="chocolate">
-                        <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="limon" value="limon">
-                        <label class="form-check-label" for="flexRadioDefault1">Limón</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="velvet" value="velvet">
-                        <label class="form-check-label" for="flexRadioDefault1">Red Velvet</label>
-                    </div>
-                </form>
-                <p class="p-order">Elige el relleno:</p>
-                <form id="rellenos">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="ddl" value="ddl">
-                        <label class="form-check-label" for="flexRadioDefault1">Dulce de Leche</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="chocolate" value="chocolate">
-                        <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="kinder" value="kinder">
-                        <label class="form-check-label" for="flexRadioDefault1">Chocolate Kinder</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="queso" value="queso">
-                        <label class="form-check-label" for="flexRadioDefault1">Cream Cheese</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="crema" value="crema">
-                        <label class="form-check-label" for="flexRadioDefault1">Crema Chantilly</label>
-                    </div>
-                </form>
-                <p class="p-order">Elige la cobertura:</p>
-                <form id="cobertura">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="ganache" value="ganache">
-                        <label class="form-check-label" for="flexRadioDefault1">Ganache</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="chocolate" value="chocolate">
-                        <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="buttercream" value="buttercream">
-                        <label class="form-check-label" for="flexRadioDefault1">Buttercream de vainilla</label>
-                    </div>
-                </form>
-                <p class="p-order">Cantidad de invitados:</p>
-                <form>
-                    <input type="number" id="personas" name="personas" value="personas">
-                    <label for="personas"></label>
-                </form>
-                <p class="p-order">Altura:</p>
-                <form id="altura">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="alto" id="flexRadioDefault1" id="alta" value="alta">
-                        <label class="form-check-label" for="flexRadioDefault1">Alta</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="alto" id="flexRadioDefault1" id="baja" value="baja">
-                        <label class="form-check-label" for="flexRadioDefault1">Baja</label>
-                    </div>
-                </form>
-                <form id="fecha">
-                    <p>Ingresa la fecha de entrega de tu pedido:</p>
-                    <input type="date" id="fecha" name="fecha" value="dd/mm/aa" required><br>
-                </form>
-                <p class="p-order">Elige forma de retiro:</p>
-                <form id="retiro">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="retiro" id="flexRadioDefault1" id="local" value="local">
-                        <label class="form-check-label" for="flexRadioDefault1">Baja</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" name="retiro" id="flexRadioDefault1" id="envio" value="envio">
-                        <label class="form-check-label" for="flexRadioDefault1">Baja</label>
-                    </div>
-                    <p>(En caso de seleccionar envío, coloca la dirección en los comentarios adicionales.)</p>
+                <form id="form-primary">
+                    <form id="gustos">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="vainilla" value="vainilla">
+                            <label class="form-check-label" for="flexRadioDefault1" >Vainilla</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="chocolate" value="chocolate">
+                            <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="limon" value="limon">
+                            <label class="form-check-label" for="flexRadioDefault1">Limón</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="velvet" value="velvet">
+                            <label class="form-check-label" for="flexRadioDefault1">Red Velvet</label>
+                        </div>
+                    </form>
+                    <p class="p-order">Elige el relleno:</p>
+                    <form id="rellenos">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="ddl" value="ddl">
+                            <label class="form-check-label" for="flexRadioDefault1">Dulce de Leche</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="chocolate" value="chocolate">
+                            <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="kinder" value="kinder">
+                            <label class="form-check-label" for="flexRadioDefault1">Chocolate Kinder</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="queso" value="queso">
+                            <label class="form-check-label" for="flexRadioDefault1">Cream Cheese</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="relleno" id="flexRadioDefault1" id="crema" value="crema">
+                            <label class="form-check-label" for="flexRadioDefault1">Crema Chantilly</label>
+                        </div>
+                    </form>
+                    <p class="p-order">Elige la cobertura:</p>
+                    <form id="cobertura">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="ganache" value="ganache">
+                            <label class="form-check-label" for="flexRadioDefault1">Ganache</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="chocolate" value="chocolate">
+                            <label class="form-check-label" for="flexRadioDefault1">Chocolate</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="cobertura" id="flexRadioDefault1" id="buttercream" value="buttercream">
+                            <label class="form-check-label" for="flexRadioDefault1">Buttercream de vainilla</label>
+                        </div>
+                    </form>
+                    <p class="p-order">Cantidad de invitados:</p>
+                    <form>
+                        <input type="number" id="personas" name="personas" value="personas">
+                        <label for="personas"></label>
+                    </form>
+                    <p class="p-order">Altura:</p>
+                    <form id="altura">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="alto" id="flexRadioDefault1" id="alta" value="alta">
+                            <label class="form-check-label" for="flexRadioDefault1">Alta</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="alto" id="flexRadioDefault1" id="baja" value="baja">
+                            <label class="form-check-label" for="flexRadioDefault1">Baja</label>
+                        </div>
+                    </form>
+                    <form id="fecha">
+                        <p>Ingresa la fecha de entrega de tu pedido:</p>
+                        <input type="date" id="fecha" name="fecha" value="dd/mm/aa" required><br>
+                    </form>
+                    <p class="p-order">Elige forma de retiro:</p>
+                    <form id="retiro">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="retiro" id="flexRadioDefault1" id="local" value="local">
+                            <label class="form-check-label" for="flexRadioDefault1">Local: Rosario, Santa Fe.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" name="retiro" id="flexRadioDefault1" id="envio" value="envio">
+                            <label class="form-check-label" for="flexRadioDefault1">Envío dentro de Rosario.</label>
+                        </div>
+                        <p>(En caso de seleccionar envío, coloca la dirección en los comentarios adicionales.)</p>
+                    </form>
                 </form>      
-            </section>         
+                        
+                
+                <!-- SELECCIONES -->
+                <section id="resultado">
+                    <div class="row">
+                        <div class="col-sm-12 col">
+                            <h2 class="h2-order">Tus selecciones:</h2>
+                            <p>Nuestro equipo administrativo se comunicará contigo para coordinar los últimos detalles y el precio final.</p>
+                            <p>Ingrese observaciones o comentarios adicionales:</p>
+                            <textarea id="comentario">Comentario...</textarea>
+                        </div>
+                    </div> 
+                </section>
             
-            <!-- SELECCIONES -->
-            <section id="resultado">
-                <div class="row">
-                    <div class="col-sm-12 col">
-                        <h2 class="h2-order">Tus selecciones:</h2>
-                        <p>Nuestro equipo administrativo se comunicará contigo para coordinar los últimos detalles y el precio final.</p>
-                        <p>Ingrese observaciones o comentarios adicionales:</p>
-                        <textarea id="comentario">Comentario...</textarea>
-                    </div>
-                </div> 
-            </section>
-        
-            <!-- MEDIOS DE PAGO -->
-            <section id="mediosdepago">
-                <div class="row">
-                    <div class="col-sm-10 col">
-                        <h2 class="h2-order">Medios de pago:</h2>
-                        <div id="pagos">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="transferencia" value="transferencia">
-                                <label class="form-check-label" for="flexRadioDefault1">Transferencia Bancaria</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="efectivo" value="efectivo">
-                                <label class="form-check-label" for="flexRadioDefault1">Efectivo</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="mercado" value="mercado">
-                                <label class="form-check-label" for="flexRadioDefault1">Mercado Pago</label>
+                <!-- MEDIOS DE PAGO -->
+                <form id="mediosdepago">
+                    <div class="row">
+                        <div class="col-sm-10 col">
+                            <h2 class="h2-order">Medios de pago:</h2>
+                            <div id="pagos">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="transferencia" value="transferencia">
+                                    <label class="form-check-label" for="flexRadioDefault1">Transferencia Bancaria</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="efectivo" value="efectivo">
+                                    <label class="form-check-label" for="flexRadioDefault1">Efectivo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" name="pago" id="flexRadioDefault1" id="mercado" value="mercado">
+                                    <label class="form-check-label" for="flexRadioDefault1">Mercado Pago</label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12 col-12 nota">
-                        <p>NOTA:</p>
-                        <p>El método de pago deseado, se debe aclarar en los comentarios.</p> 
-                        <p>El pedido debe estar pago para realizar la entrega del mismo.</p>
-                        <button class="btn btn-order btn-outline-success" type="submit">Solicitar pedido.</button>
-                    </div>
-                </div>                 
+    
+                    <div class="row">
+                        <div class="col-sm-12 col-12 nota">
+                            <p>NOTA:</p>
+                            <p>El método de pago deseado, se debe aclarar en los comentarios.</p> 
+                            <p>El pedido debe estar pago para realizar la entrega del mismo.</p>
+                            <button class="btn btn-order btn-outline-success" type="submit">Solicitar pedido.</button>
+                        </div>
+                    </div> 
+                </form>                
             </section>                    
         </section>
     </div>

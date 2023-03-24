@@ -1,12 +1,12 @@
 .header {
     background-color: $rosa_pastel;
     width: 100%;
-        #banner {
-            max-height: 15rem;
-            margin-right: auto;
-            margin-left: auto;
-            display:block;
-        }
+    #banner {
+        max-height: 15rem;
+        margin-right: auto;
+        margin-left: auto;
+        display:block;
+    }  
 }
 
 /* Navegación */
@@ -20,6 +20,7 @@
         .navbar-toggler-icon {
             width: 1rem;
         }
+    }
     .navbar-collapse {
         justify-content: center;
         background-color: $rosa_pastel;
@@ -40,7 +41,6 @@
                     text-shadow: 0 0.2rem 0.8rem $rosa_oscuro;
                 }
             }
-        }
         }
     }
 }
@@ -72,18 +72,20 @@
         }
 }
 
-/*Back Button*/
-.top {
-    margin-top: 4%;
-        .back {
-            font-size: 1.1rem;
-            color:$celeste_btb;
-            text-decoration: none;
-            padding-top: 6%;
-        }
+// titulos
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    .back {
+        font-size: 1.2rem;
+        color:$celeste_btb;
+        text-decoration: none;
+    }
 }
 
-/* MEDIA QUERIES P/ CELULARES*/
+/* MEDIA QUERIES SM*/
 @media screen and (max-width: 576px) {
     .nav-link {
         font-size: 0.85rem;
@@ -94,6 +96,12 @@
     
     .header #banner {
         max-height: 150px;
+    }
+
+    .flex-container {
+        .back {
+            font-size: 0.8rem;
+        }
     }
 
 
@@ -108,12 +116,9 @@
             }
         }
         .footer {
-            font-size: 0.45rem;
-            margin: 0.8%;
+            font-size: 0.6rem;
+            margin: 2%;
         }
     }
 
-    .top .back {
-        font-size:1rem;
-    }
 }

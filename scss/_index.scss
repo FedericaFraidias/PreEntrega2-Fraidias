@@ -1,6 +1,5 @@
 /* ----------INDEX------------ */
 .hero {
-   
     .container-p {
         line-height: 4rem;
         align-items: center; 
@@ -13,12 +12,12 @@
         position: relative;
         overflow: hidden;
         @include sizes (300px, 486px);
-            .inst {
-                position: absolute;
-                @include sizes (98%, 98%);
-                box-shadow: 0.1rem 0.1rem 0.6rem black;
-                border-radius: 1%;
-            }
+        .inst {
+            position: absolute;
+            @include sizes (98%, 98%);
+            box-shadow: 0.1rem 0.1rem 0.6rem black;
+            border-radius: 1%;
+        }
     }
     
     .imagen-hero {
@@ -26,16 +25,45 @@
     }
 }
 
-#carousel {
-    padding-top: 6.5%;
-    padding-bottom: 4%;
-        .carousel-img {
-            width: 25%;
-            display: inline-block;
-            margin: 5% 4% 5% 4%;
+    #carousel {
+        padding-top: 6.5%;
+        padding-bottom: 4%;
+        .carousel-item {
+            justify-content: space-evenly;
         }
+        .carousel-img {
+            width: 32%;
+            display: inline-block;
+        }
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+            background-color: $rosa_oscuro;
+            border-radius: 50%;
+        }
+    }
+
+
+
+.carrusel-md-sm {
+    @include sizes (80%, 80%);
+    margin: 3% 0 10% 0;
+    display: flex;
+    display: none;
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: $rosa_oscuro;
+        border-radius: 50%;
+    }
 }
 
+// MEDIA QUERIES MD
+
+@media screen and (max-width: 770px) {
+    .carrusel-md-sm {
+        display: inherit;
+    }
+    #carousel {
+        display: none;
+    }
+}
 
 /* MEDIA QUERIES SM*/
 @media screen and (max-width: 576px) {
@@ -60,11 +88,11 @@
             color: $negro;
             letter-spacing: 0.03rem;
             padding-left: 0;
-                #aboutus {
-                    width: 200%;
-                    font-size: 0.7rem;
-                    line-height: 180%;
-                }
+            #aboutus {
+                width: 200%;
+                font-size: 0.7rem;
+                line-height: 180%;
+            }
         }
 
     }
@@ -78,5 +106,4 @@
             margin: 0 0.1% 10% 0.44%;
         }
     }
-    // Falta alinear las flechas del carrusel y cambiarles el color para que sean más visibles.
 }
