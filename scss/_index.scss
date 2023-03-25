@@ -46,8 +46,10 @@
 #carousel {
     padding-top: 4%;
     padding-bottom: 4%;
-    .carousel-item .active {
-        justify-content: space-evenly;
+    .active {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .carousel-img {
         width: 32%;

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <title>Born To Bake - Mis Pedidos</title>
+  <meta name="description" value="Pastelería personalizada para eventos. Escoge tus diseños y creemos la torta de tus sueños.">
+  <meta name="keywords" value="Tortas de personajes, Tortas Rosario, Pasteleria personalizada">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,7 +67,7 @@
             <section class="col-sm-10 col">
                 <h2 class="h2-order">Personaliza tu pedido:</h2>
                 <p class="p-order">Elige el gusto:</p>
-                <form id="form-primary">
+                <form id="form-primary" method="get">
                     <form id="gustos">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" name="gusto" id="flexRadioDefault1" id="vainilla" value="vainilla">
@@ -196,11 +198,13 @@
                             <p>NOTA:</p>
                             <p>El método de pago deseado, se debe aclarar en los comentarios.</p> 
                             <p>El pedido debe estar pago para realizar la entrega del mismo.</p>
-                            <button class="btn btn-order btn-outline-success" type="submit">Solicitar pedido.</button>
                         </div>
                     </div> 
                 </form>                
-            </section>                    
+            </section>     
+            <div class="boton-orden d-flex">
+                <button class="btn btn-order btn-outline-success" type="submit">Solicitar pedido.</button>
+            </div>               
         </section>
     </div>
     

@@ -217,8 +217,10 @@ h2 {
   padding-top: 4%;
   padding-bottom: 4%;
 }
-#carousel .carousel-item .active {
-  justify-content: space-evenly;
+#carousel .active {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 #carousel .carousel-img {
   width: 32%;
@@ -349,6 +351,11 @@ h2 {
 .section-product .col.d-flex .card .card-img-top {
   border-radius: 4%;
 }
+.section-product .col.d-flex .card:hover {
+  width: 450px;
+  box-shadow: 0 0.1rem 0.9rem black;
+  margin-bottom: 0;
+}
 .section-product .modal-dialog {
   margin-top: 0.5%;
 }
@@ -410,12 +417,13 @@ h2 {
     padding-left: 3px;
     padding-bottom: 22px;
   }
-  /* No logré sacar el espacio superior entre el h2 y el nav search*/
-  .col.d-flex .card {
-    box-shadow: 0.2rem 0.1rem 0.8em #95BFB0;
+  .card {
     max-width: 250px;
   }
-  .col.d-flex .modal-dialog {
+  .card:hover {
+    max-width: 300px;
+  }
+  .modal-dialog {
     margin-top: 20%;
   }
   /* Sección search */
@@ -559,8 +567,11 @@ h2 {
   margin: 4% 0 4% 0;
   font-weight: bold;
 }
-.order-hero .btn-order {
-  margin: 2% 0 0 40%;
+.order-hero .boton-orden {
+  flex-direction: row;
+  justify-content: center;
+}
+.order-hero .boton-orden .btn-order {
   color: #D96A7E;
   border: #D96A7E 1px solid;
 }
@@ -587,9 +598,6 @@ h2 {
   }
   .order-hero .nota {
     line-height: 1rem;
-  }
-  .order-hero .btn-order {
-    margin: 5% 0 0 30%;
   }
 }
 @keyframes shadow {

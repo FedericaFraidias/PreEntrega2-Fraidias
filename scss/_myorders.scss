@@ -20,11 +20,16 @@
         margin: 4% 0 4% 0;
         font-weight: bold;
     }
-    .btn-order {
-        margin: 2% 0 0 40%;
-        color: $rosa_fuerte;
-        border: $rosa_fuerte 1px solid;
+
+    .boton-orden {
+        flex-direction: row;
+        justify-content: center;
+        .btn-order {
+            color: $rosa_fuerte;
+            border: $rosa_fuerte 1px solid;
+        }
     }
+
 
     .btn-order:hover {
     background-color: $rosa_fuerte;
@@ -49,8 +54,5 @@
         .nota {
             line-height: 1rem;
         }
-        .btn-order {
-            margin: 5% 0 0 30%;
-        } 
     }
 }

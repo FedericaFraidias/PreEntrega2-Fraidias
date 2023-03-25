@@ -28,6 +28,12 @@
                     border-radius: 4%;
                 }
         }
+        .card:hover {
+            width: 450px;
+            box-shadow: 0 0.1rem 0.9rem black;
+            margin-bottom: 0;
+            
+        }
     }
     .modal-dialog {
         margin-top: 0.5%;
@@ -76,34 +82,33 @@
 @media screen and (max-width: 576px) {
     .navbar-search {
         display: inline;
-            #navbarSupportedContentSearch {
+        #navbarSupportedContentSearch {
+            display: inline;
+            .navbar-nav-search {
                 display: inline;
-                    .navbar-nav-search {
-                        display: inline;
-                            .nav-item-search .nav-link-search {
-                                font-size: 0.5rem;
-                            }
-                    }
-            }
-                .btn-search {
-                    @include sizes (50px, 20px);
-                    position: relative;
-                    font-size: 12.5px;
-                    padding-left: 3px;
-                    padding-bottom: 22px;
+                .nav-item-search .nav-link-search {
+                    font-size: 0.5rem;
                 }
-    }    
-
-    /* No logré sacar el espacio superior entre el h2 y el nav search*/
-    .col.d-flex {
-        .card {
-            box-shadow: 0.2rem 0.1rem 0.8em $celeste_btb;
-            max-width: 250px;
+            }
         }
-        .modal-dialog {
-            margin-top: 20%;
+        .btn-search {
+            @include sizes (50px, 20px);
+            position: relative;
+            font-size: 12.5px;
+            padding-left: 3px;
+            padding-bottom: 22px;
         }
     }    
+    
+    .card {
+        max-width: 250px;
+    }
+    .card:hover {
+        max-width: 300px;
+    }
+    .modal-dialog {
+        margin-top: 20%;
+    }
     
     /* Sección search */
     .navbar-search {
