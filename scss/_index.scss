@@ -12,9 +12,10 @@
     .grid-p {
         grid-column: 2/7;
         align-items: center;
-        line-height: 320%;
+        line-height: 300%;
         font-size: large;
         margin: 0;
+        flex-wrap: wrap;
     }
     .grid-iframe {
         grid-column: 8/12;
@@ -36,9 +37,10 @@
     .grid-p-2 {
         grid-column: 7/12;
         align-items: center;
-        line-height: 320%;
+        line-height: 300%;
         font-size: large;
         margin: 0;
+        flex-wrap: wrap;
     }
 }
 
@@ -122,15 +124,13 @@
 
         }
         .grid-iframe {
-            height: 40%;
+            height: 50%;
             margin-bottom: 50%;
         }
         #grid-img {
-            width: 110%;
+            width: 100%;
         }
     }
-
-
 
     
     #carousel {

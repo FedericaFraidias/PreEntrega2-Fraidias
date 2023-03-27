@@ -9,6 +9,7 @@
 .const-body {
     background-color: $blanco;
     .row-const {
+        margin: 0;
         flex-direction: row;
         .hero-const {
             margin-top: 20%;
@@ -49,7 +50,11 @@
 
 /* MEDIA QUERIES SM*/
 @media screen and (max-width: 576px) {
-    .const-body .row-const .hero-const p {
+    .hero-const {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .const-body, .row-const, .hero-const, p {
         font-size: 0.85rem;
     }
 }

@@ -183,9 +183,10 @@ h2 {
 .grid-container-index .grid-p {
   grid-column: 2/7;
   align-items: center;
-  line-height: 320%;
+  line-height: 300%;
   font-size: large;
   margin: 0;
+  flex-wrap: wrap;
 }
 .grid-container-index .grid-iframe {
   grid-column: 8/12;
@@ -208,9 +209,10 @@ h2 {
 .grid-container-index .grid-p-2 {
   grid-column: 7/12;
   align-items: center;
-  line-height: 320%;
+  line-height: 300%;
   font-size: large;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 #carousel {
@@ -285,11 +287,11 @@ h2 {
     font-size: small;
   }
   .grid-container-index .grid-iframe {
-    height: 40%;
+    height: 50%;
     margin-bottom: 50%;
   }
   .grid-container-index #grid-img {
-    width: 110%;
+    width: 100%;
   }
   #carousel {
     padding: 0;
@@ -621,6 +623,7 @@ h2 {
   background-color: #FFFDFD;
 }
 .const-body .row-const {
+  margin: 0;
   flex-direction: row;
 }
 .const-body .row-const .hero-const {
@@ -657,7 +660,11 @@ h2 {
 
 /* MEDIA QUERIES SM*/
 @media screen and (max-width: 576px) {
-  .const-body .row-const .hero-const p {
+  .hero-const {
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+  .const-body, .row-const, .hero-const, p {
     font-size: 0.85rem;
   }
 }
